@@ -78,18 +78,18 @@ header a:hover {
 }
 
 .switch label {
-	font-size: 14px;
+	font-size: 18px;
+}
+
+.switch label .lever {
+	background-color: #84c7c1;
+	width: 55px;
 }
 
 .switch label .lever::after {
 	background-color: #26a69a;
 }
 
-.switch label .lever {
-	background-color: #84c7c1;
-}
-
-.container img {
-	width: 100%;
-	margin:1em;
+.switch label input[type="checkbox"]:checked + .lever::after {
+	left: 37px;
 }
