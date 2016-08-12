@@ -88,3 +88,22 @@ header a:hover {
 .switch label input[type="checkbox"]:checked + .lever::after {
 	left: 37px;
 }
+
+.container h1 {
+  text-align: center;
+  font-size: 2.7em;
+  font-weight: 300;
+}
+
+.container hr {
+  width: 200px;
+  margin-bottom: 2em;
+}
+
+.container p {
+  margin-bottom: 3em;
+}
+
+.responsive-img:hover {
+  opacity: 0.8;
+}
