@@ -1,10 +1,9 @@
 #header-dev {
   background-color: #263d36;
-  background-image: url("../images/developer/vinyls_cropped.jpg");
+  background-image: url("../images/developer/developer-header.jpeg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  line-height: 1.2;
   padding: 10vw 2em;
   text-align: center;
   margin-bottom: 15px;
@@ -38,13 +37,9 @@
   border-radius: 50px;
 }
 
-#header-content {
-	text-align: right;
-}
-
 header h1 {
   color: white;
-  font-size: 2.5em;
+  font-size: 2.7em;
   font-weight: 300;
 }
 
@@ -58,7 +53,7 @@ header a {
   border: 1px solid #26a69a;
   border-radius: 290486px;
   color: white;
-  font-size: 0.6em;
+  font-size: 0.7em;
   letter-spacing: 0.2em;
   padding: 1em 2em;
   text-transform: uppercase;

@@ -1,42 +1,35 @@
-angular.module('folioApp', ['ui.router'])
+// wrap in an IIFE to remove variables from global scope
+(function() {
+	'use strict';
 
-.controller('FolioController', ['$scope', '$location',
-	function($scope, $location) {
-		console.log('Angular version ' + angular.version.full + 'injected!');
-		console.log('FolioController injected!');
+	angular.module('folioApp', ['ui.router'])
+		.config(function($stateProvider, $urlRouterProvider, $compileProvider) {
 
-		$scope.go = function ( path ) {
-		  $location.path( path );
-		};
-	}
-])
+			// https://code.angularjs.org/1.5.5/docs/guide/production
+		  $compileProvider.debugInfoEnabled(false);
 
-.config(function($stateProvider, $urlRouterProvider, $compileProvider) {
+		  $stateProvider
+		  .state('developer', {
+		    url: '/developer',
+		    templateUrl: 'templates/developer.html',
+		    controller: 'DeveloperController'
+		  })
+		  .state('photographer', {
+		    url: '/photographer',
+		    templateUrl: 'templates/photographer.html',
+		    controller: 'PhotographerController'
+		  })
+		  .state('skillset', {
+		    url: '/skillset',
+		    templateUrl: 'templates/skillset.html',
+		    controller: 'DeveloperController'
+		  })
+		  .state('etude', {
+		    url: '/etude',
+		    templateUrl: 'templates/etude.html',
+		    controller: 'DeveloperController'
+		  });
 
-	// https://code.angularjs.org/1.5.5/docs/guide/production
-  $compileProvider.debugInfoEnabled(false);
-
-  $stateProvider
-  .state('developer', {
-    url: '/developer',
-    templateUrl: 'templates/developer.html',
-    controller: 'FolioController'
-  })
-  .state('photographer', {
-    url: '/photographer',
-    templateUrl: 'templates/photographer.html',
-    controller: 'FolioController'
-  })
-  .state('skillset', {
-    url: '/skillset',
-    templateUrl: 'templates/skillset.html',
-    controller: 'FolioController'
-  })
-  .state('etude', {
-    url: '/etude',
-    templateUrl: 'templates/etude.html',
-    controller: 'FolioController'
-  });
-
-  $urlRouterProvider.otherwise('/developer');
-});
+		  $urlRouterProvider.otherwise('/developer');
+		});
+})();
