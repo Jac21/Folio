@@ -76,6 +76,12 @@ header a:hover {
 	font-size: 18px;
 }
 
+@media all and (max-width: 350px) {
+  .switch label {
+    font-size: 16px;
+  }
+}
+
 .switch label .lever {
 	background-color: #84c7c1;
 	width: 55px;
@@ -106,4 +112,10 @@ header a:hover {
 
 .responsive-img:hover {
   opacity: 0.8;
+}
+
+@media all and (max-width: 600px) {
+  .responsive-img {
+    margin-bottom: 2em;
+  }
 }

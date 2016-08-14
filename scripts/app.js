@@ -2,7 +2,7 @@
 (function() {
 	'use strict';
 
-	angular.module('folioApp', ['ui.router'])
+	angular.module('folioApp', ['ui.router', 'ngAnimate'])
 		.config(function($stateProvider, $urlRouterProvider, $compileProvider) {
 
 			// https://code.angularjs.org/1.5.5/docs/guide/production
