@@ -3,7 +3,7 @@
 	'use strict';
 
 	angular.module('folioApp', ['ui.router', 'ngAnimate'])
-		.config(function($stateProvider, $urlRouterProvider, $compileProvider) {
+		.config(function($stateProvider, $urlRouterProvider, $compileProvider, $locationProvider) {
 
 			// https://code.angularjs.org/1.5.5/docs/guide/production
 		  $compileProvider.debugInfoEnabled(false);
@@ -27,6 +27,16 @@
 		  .state('etude', {
 		    url: '/etude',
 		    templateUrl: 'templates/etude.html',
+		    controller: 'DeveloperController'
+		  })
+		  .state('reponotes', {
+		    url: '/reponotes',
+		    templateUrl: 'templates/reponotes.html',
+		    controller: 'DeveloperController'
+		  })
+		  .state('tfstoolset', {
+		    url: '/tfstoolset',
+		    templateUrl: 'templates/tfstoolset.html',
 		    controller: 'DeveloperController'
 		  });
 

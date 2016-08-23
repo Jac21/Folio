@@ -3,11 +3,24 @@
 	<hr>
 	<p>Soon after graduation, I found myself scrambling to build my resume and a network of contacts, gain valuable insight into the hiring process, and basically be in a good position to obtain a job or start a career with a strong backing and portfolio at my disposal. Whilst perusing for better ways of managing the myriad of methods resumes are created and maintained, I came across <a href="https://jsonresume.org/" target="_blank" rel="noopener">JSON Resume</a>.</p>
 
-	<img class = "responsive-img" src = "images/developer/json-resume.PNG" alt="JSON Resume homepage"/>
+	<img class = "responsive-img" src = "dist/images/developer/skillset/json-resume.PNG" alt="JSON Resume homepage"/>
 
 	<p>JSON Resume is a fantastic idea. The basic premise involves collecting and formatting pieces of information commonly associated with resumes (anything from basic contact information to education and skills) into a JSON object. This object can then be used to generate PDF copies or websites of a resume with a variety of themes, and create a standard for developers to share that information.</p>
 
+	<img class = "responsive-img" src = "dist/images/developer/skillset/schema.PNG" alt="JSON Resume schema"/>
+
 	<p>Utilizing the standard's pre-built website templates, I was able to get a simplistic <a href="https://jac21.github.io/" target="_blank" rel="noopener">resume site</a> up with little hassle, and get my information in order across my own personal resume and LinkedIn. One small component I did forsee using some visual enhancement was the "Skills" section of the standard. This stemmed primarily from both the nature of the industry (ergo, the focus on the raw aptitude of the candidate themselves, as well as the languages/frameworks/etc. they're able to work with), as well as my preference for the visual over the plainly textual.</p>
 
-	<p>With the basic concept in mind, I spent some time browsing the various basic vizualizations that the JavaScript library <a href="https://d3js.org/" target="_blank" rel="noopener">D3.js</a> was used to create, landing finally on the <a href="https://bl.ocks.org/mbostock/4062045" target="_blank" rel="noopener">Force Directed Graph</a>, which I felt conveyed the information was most necessary in accordance with the set of skills a programmer posseses. 
+	<p>With the basic concept in mind, I spent some time browsing the various basic vizualizations that the JavaScript library <a href="https://d3js.org/" target="_blank" rel="noopener">D3.js</a> was used to create, landing finally on the <a href="https://bl.ocks.org/mbostock/4062045" target="_blank" rel="noopener">Force Directed Graph</a>, which I felt conveyed the information was most necessary in accordance with the set of skills a programmer posseses.</p>
+
+	<img class = "responsive-img" src = "dist/images/developer/skillset/fdg.PNG" alt="fdg"/>
+
+	<p>With the gist of the final deliverable in mind, I set out wrangling D3.js and an example Force Directed Graph implementation together with some simple jQuery assisted code. The code primarily intakes a user's JSON Resume, converts it into a more D3 friendly CSV format, and then allows for the user to re-enter that generated CSV to generate their graph. An example of that CSV output is shown below:</p>
+
+	<img class = "responsive-img" src = "dist/images/developer/skillset/output-example.PNG" alt="CSV output"/>
+
+	<p>Some things to note are the 'source' and 'target' columns, which are derived from the JSON resume. These determine where the overall points in the graph are demarcated, wherein the JSON resume, the schema dictates a "name" and "keywords" array under that skill name, the converter uses the name as the root node, and the keywords as its children.</p>
+
+	<img class = "responsive-img" src = "dist/images/developer/skillset/skillset-example.PNG" alt="skillset output"/>
+	
 </div>
