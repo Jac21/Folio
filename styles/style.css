@@ -1,4 +1,4 @@
-#header-dev {
+.header-dev {
   background-color: #263d36;
   background-image: url("../images/developer/developer-header.jpeg");
   background-position: center top;
@@ -9,7 +9,7 @@
   margin-bottom: 15px;
 }
 
-#header-photo {
+.header-photo {
   background-color: #263d36;
   background-image: url("../images/photographer/photo-banner-min.jpg");
   background-position: center top;
@@ -21,7 +21,7 @@
   margin-bottom: 15px;
 }
 
-#headshot-dev {
+.headshot-dev {
   display: inline-block;
   height: 120px;
   vertical-align: top;
@@ -29,7 +29,7 @@
   border-radius: 100px;
 }
 
-#headshot-photo {
+.headshot-photo {
   display: inline-block;
   height: 150px;
   vertical-align: top;
@@ -99,6 +99,16 @@ header a:hover {
 
 .switch label input[type="checkbox"]:checked + .lever::after {
 	left: 37px;
+}
+
+@media all and (max-width: 768px) {
+  .card-link {
+    margin-bottom: 1em !important;
+  }
+}
+
+.more-info-link {
+  cursor: pointer;
 }
 
 .container h1 {
