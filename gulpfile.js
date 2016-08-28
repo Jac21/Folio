@@ -1,8 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
-var browserSync = require('browser-sync');	// synch browser and code changes
-var nodemon = require('gulp-nodemon');			
+var browserSync = require('browser-sync');	// synch browser and code changes		
 var lint = require('gulp-eslint');					// lint JS files
 var imagemin = require('gulp-imagemin');		// optimizing images
 var rename = require('gulp-rename');				// optimizing js

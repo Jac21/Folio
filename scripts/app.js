@@ -2,6 +2,8 @@
 (function() {
 	'use strict';
 
+	// TODO: https://github.com/angular-ui/ui-router/wiki/Multiple-Named-Views#view-names---relative-vs-absolute-names
+	// TODO: https://scotch.io/tutorials/angular-routing-using-ui-router
 	angular.module('folioApp', ['ui.router', 'ngAnimate'])
 		.config(function($stateProvider, $urlRouterProvider, $compileProvider, $locationProvider) {
 
@@ -17,6 +19,11 @@
 		  .state('photographer', {
 		    url: '/photographer',
 		    templateUrl: 'templates/photographer.html',
+		    controller: 'PhotographerController'
+		  })
+		  .state('vera-photoshoot', {
+		    url: '/vera-photoshoot',
+		    templateUrl: 'templates/photoshoots/vera-photoshoot.html',
 		    controller: 'PhotographerController'
 		  })
 		  .state('skillset', {

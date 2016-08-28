@@ -122,6 +122,16 @@ header a:hover {
   margin-bottom: 2em;
 }
 
+.header-back-link {
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.header-back-link:hover {
+  color: #26a69a;
+}
+
 .container p {
   margin-bottom: 3em;
 }
@@ -138,4 +148,21 @@ header a:hover {
   .responsive-img {
     margin-bottom: 2em;
   }
+}
+
+.shoot-main-img {
+  cursor: pointer;
+}
+
+.caption {
+  text-align: center;
+  cursor: pointer;
+}
+
+.caption:hover {
+  color: #26a69a;
+}
+
+.shoot-img {
+  margin-bottom: 4em;
 }
