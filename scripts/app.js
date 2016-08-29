@@ -47,6 +47,17 @@
 		    controller: 'DeveloperController'
 		  });
 
+
+		  /*
+		  	// I swear, there's some perceived slow-down between pages when activating this,
+		  	// opting out until I figure out what that is exactly:
+		  	
+		  $locationProvider.html5Mode({
+		  	enabled: true,
+		  	requireBase: false
+		  });
+		  */
+
 		  $urlRouterProvider.otherwise('/developer');
 		});
 })();

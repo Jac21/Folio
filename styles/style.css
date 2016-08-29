@@ -140,10 +140,6 @@ header a:hover {
   margin-bottom: 1em;
 }
 
-.responsive-img:hover {
-  opacity: 0.8;
-}
-
 @media all and (max-width: 600px) {
   .responsive-img {
     margin-bottom: 2em;
@@ -152,6 +148,10 @@ header a:hover {
 
 .shoot-main-img {
   cursor: pointer;
+}
+
+.shoot-main-img:hover {
+  opacity: 0.8;
 }
 
 .caption {
