@@ -13,12 +13,12 @@
 		  $stateProvider
 		  .state('developer', {
 		    url: '/developer',
-		    templateUrl: 'templates/developer.html',
+		    templateUrl: 'templates/main/developer.html',
 		    controller: 'DeveloperController'
 		  })
 		  .state('photographer', {
 		    url: '/photographer',
-		    templateUrl: 'templates/photographer.html',
+		    templateUrl: 'templates/main/photographer.html',
 		    controller: 'PhotographerController'
 		  })
 		  .state('vera-photoshoot', {
@@ -28,22 +28,22 @@
 		  })
 		  .state('skillset', {
 		    url: '/skillset',
-		    templateUrl: 'templates/skillset.html',
+		    templateUrl: 'templates/projects/skillset.html',
 		    controller: 'DeveloperController'
 		  })
 		  .state('etude', {
 		    url: '/etude',
-		    templateUrl: 'templates/etude.html',
+		    templateUrl: 'templates/projects/etude.html',
 		    controller: 'DeveloperController'
 		  })
 		  .state('reponotes', {
 		    url: '/reponotes',
-		    templateUrl: 'templates/reponotes.html',
+		    templateUrl: 'templates/projects/reponotes.html',
 		    controller: 'DeveloperController'
 		  })
 		  .state('tfstoolset', {
 		    url: '/tfstoolset',
-		    templateUrl: 'templates/tfstoolset.html',
+		    templateUrl: 'templates/projects/tfstoolset.html',
 		    controller: 'DeveloperController'
 		  });
 
