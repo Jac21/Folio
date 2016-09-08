@@ -1,3 +1,7 @@
+/*
+  Header element styles
+*/
+
 .header-dev {
   background-color: #263d36;
   background-image: url("../images/developer/developer-header.jpeg");
@@ -66,6 +70,10 @@ header a:hover {
   background:  #26a69a;
   color: white;
 }
+
+/*
+  Switch styles
+*/
 
 .switch {
 	margin: 1em;
@@ -165,4 +173,35 @@ header a:hover {
 
 .shoot-img {
   margin-bottom: 4em;
+}
+
+/*
+  Contact FAB Button Styles
+*/
+
+@media all and (max-width: 768px) {
+  .fixed-action-btn {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .btn-floating.btn-large {
+    width: 45.5px;
+    height: 45.5px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .btn-floating.btn-large i {
+    line-height: 50.5px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .fixed-action-btn.horizontal ul {
+    right: 45px;
+    top: 34%;
+  }
 }
