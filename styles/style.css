@@ -175,9 +175,31 @@ header a:hover {
   margin-bottom: 4em;
 }
 
+.image-overlay-container {
+  position: absolute;
+  padding-left: 10px;
+}
+
+.image-overlay-container i {
+  color: #FF2E63;
+}
+
+.image-overlay-container i:hover {
+  color: #9E4396;
+}
+
+
 /*
   Contact FAB Button Styles
 */
+
+.btn-floating {
+  background-color: #FF2E63;
+}
+
+.btn-floating:hover {
+  background-color: #FF2E63;
+}
 
 @media all and (max-width: 768px) {
   .fixed-action-btn {
@@ -195,7 +217,7 @@ header a:hover {
 
 @media all and (max-width: 375px) {
   .btn-floating.btn-large i {
-    line-height: 50.5px;
+    line-height: 45.5px;
   }
 }
 
