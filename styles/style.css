@@ -181,24 +181,30 @@ header a:hover {
 }
 
 .image-overlay-container i {
-  color: #FF2E63;
+  color: #26a69a;
 }
 
 .image-overlay-container i:hover {
+  cursor: pointer;
   color: #9E4396;
 }
 
+@media all and (max-width: 375px) {
+  .image-overlay-container i {
+    font-size: 3em;
+  }
+}
 
 /*
   Contact FAB Button Styles
 */
 
 .btn-floating {
-  background-color: #FF2E63;
+  background-color: #26a69a;
 }
 
 .btn-floating:hover {
-  background-color: #FF2E63;
+  background-color: #26a69a;
 }
 
 @media all and (max-width: 768px) {
