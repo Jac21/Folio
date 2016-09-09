@@ -158,10 +158,6 @@ header a:hover {
   cursor: pointer;
 }
 
-.shoot-main-img:hover {
-  opacity: 0.8;
-}
-
 .caption {
   text-align: center;
   cursor: pointer;
@@ -177,11 +173,10 @@ header a:hover {
 
 .image-overlay-container {
   position: absolute;
-  padding-left: 10px;
 }
 
 .image-overlay-container i {
-  color: #26a69a;
+  color: white;
 }
 
 .image-overlay-container i:hover {
@@ -232,4 +227,40 @@ header a:hover {
     right: 45px;
     top: 34%;
   }
+}
+
+/*
+  Animate.css entries
+*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
