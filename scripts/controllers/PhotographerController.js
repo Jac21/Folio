@@ -3,8 +3,8 @@
 		.module('folioApp')
 		.controller('PhotographerController', ['$scope', '$location',
 			function($scope, $location) {
-				console.log('Angular version ' + angular.version.full + ' injected!');
-				console.log('PhotographerController injected!');
+				// set page class
+				$scope.pageClass = 'photographer';
 
 				$scope.go = function ( path ) {
 				  $location.path( path );

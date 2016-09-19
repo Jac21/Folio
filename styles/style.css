@@ -109,6 +109,10 @@ header a:hover {
 	left: 37px;
 }
 
+/*
+  Card styles
+*/
+
 @media all and (max-width: 768px) {
   .card-link {
     margin-bottom: 1em !important;
@@ -144,6 +148,24 @@ header a:hover {
   margin-bottom: 3em;
 }
 
+/*
+  Development-Process styles
+*/
+
+.blog-container {
+  width: 70%;
+}
+
+.responsive-img-text > p {
+  text-align: center;
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+/*
+  Image styles
+*/
+
 .responsive-img {
   margin-bottom: 1em;
 }
@@ -176,6 +198,7 @@ header a:hover {
 }
 
 .image-overlay-container i {
+  padding-top: 5px;
   color: white;
 }
 
@@ -264,3 +287,98 @@ header a:hover {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
+
+/* https://scotch.io/tutorials/animating-angularjs-apps-ngview
+  Page-level styles
+
+.ng-enter {
+  z-index: 8888; 
+}
+
+.ng-leave { 
+  z-index: 9999; 
+}
+
+.developer.ng-enter { 
+  animation: slideInLeft 0.5s both ease-in;
+  -webkit-animation:slideInLeft 0.5s both ease-in;
+  -moz-animation:slideInLeft 0.5s both ease-in; 
+}
+
+.developer.ng-leave { 
+  animation: slideOutRight 0.5s both ease-in;
+  -webkit-animation:slideOutRight 0.5s both ease-in;
+  -moz-animation:slideOutRight 0.5s both ease-in;
+}
+
+.photographer.ng-enter { 
+  animation: slideInRight 0.5s both ease-in; 
+  -webkit-animation:slideInRight 0.5s both ease-in;
+  -moz-animation:slideInRight 0.5s both ease-in;
+}
+
+.photographer.ng-leave { 
+  animation: slideOutLeft 0.5s both ease-in;
+  -webkit-animation:slideOutLeft 0.5s both ease-in;
+  -moz-animation:slideOutLeft 0.5s both ease-in;
+}
+
+
+/* ANIMATIONS
+============================================================================= 
+
+/* leaving animations ----------------------------------------- 
+
+/* slide out from the left 
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {  
+  to    { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+  to    { -webkit-transform: translateX(-100%); }
+}
+
+/* slide out from the right 
+@keyframes slideOutRight {
+    to      { transform: translateX(100%); }
+}
+@-moz-keyframes slideOutRight {  
+  to    { -moz-transform: translateX(100%); }
+}
+@-webkit-keyframes slideOutRight {
+  to    { -webkit-transform: translateX(100%); }
+}
+
+/* entering animations --------------------------------------- 
+
+/* slide in from the right 
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+  from  { -moz-transform:translateX(100%); }
+  to    { -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+  from  { -webkit-transform:translateX(100%); }
+  to    { -webkit-transform: translateX(0); }
+}
+
+/* slide in from the left 
+@keyframes slideInLeft {
+    from    { transform:translateX(-100%); }
+    to      { transform: translateX(0); }
+}
+@-moz-keyframes slideInLeft {
+    from    { transform:translateX(-100%); }
+    to      { transform: translateX(0); }
+}
+@-webkit-keyframes slideInLeft {
+    from    { transform:translateX(-100%); }
+    to      { transform: translateX(0); }
+}
+*/
