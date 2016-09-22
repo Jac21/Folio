@@ -153,13 +153,36 @@ header a:hover {
 */
 
 .blog-container {
-  width: 70%;
+  width: 55%;
+}
+
+@media all and (max-width: 768px) {
+  .blog-container {
+    width: 70%;
+  }
+}
+
+.blog-container p {
+  padding: 2em 0em;
+  font-size: 15px;
+}
+
+.blog-container a {
+  border-bottom: 1px solid;
+}
+
+.blog-container a:hover {
+  border-bottom: none;
+}
+
+.blog-container img:hover {
+  opacity: 0.7;
 }
 
 .responsive-img-text > p {
   text-align: center;
   opacity: 0.6;
-  font-size: 12px;
+  font-size: 0.9em;
 }
 
 /*
