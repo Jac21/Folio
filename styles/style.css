@@ -143,6 +143,16 @@ header a:hover {
   color: #26a69a;
 }
 
+.scroll-top-link {
+  text-align: center;
+  margin: 0 auto 50px auto;
+  cursor: pointer;
+}
+
+.scroll-top-link:hover {
+  color: #26a69a;
+}
+
 .container p {
   margin-bottom: 3em;
 }
