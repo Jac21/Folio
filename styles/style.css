@@ -133,6 +133,10 @@ header a:hover {
   margin-bottom: 2em;
 }
 
+.shoot-text {
+  text-align: center;
+}
+
 .header-back-link {
   text-align: center;
   margin: 0 auto;
