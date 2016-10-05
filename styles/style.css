@@ -249,6 +249,12 @@ header a:hover {
   }
 }
 
+@media all and (max-width: 375px) {
+  .materialbox-caption {
+    margin-bottom: 50px;
+  }
+}
+
 /*
   Contact FAB Button Styles
 */
