@@ -1,6 +1,6 @@
 <div class="container">
 	<h1>RepoNotes</h1>
-	<div ng-click="go('/developer')" class="header-back-link">Back</div>
+	<div ng-click="go('/developer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/developer')">Back</div>
 	<hr>
 	<p>Coming soon...</p>
 </div>

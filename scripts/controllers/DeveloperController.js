@@ -9,6 +9,10 @@
 				$scope.go = function ( path ) {
 				  $location.path( path );
 				};
+
+				$scope.activate = function(event) {
+					$(event.target).addClass('active');
+				};
 			}
 		]);
 })();
