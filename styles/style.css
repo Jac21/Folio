@@ -83,6 +83,12 @@ header a:hover {
 	font-size: 18px;
 }
 
+@media all and (min-width: 768px) {
+  .switch label {
+    font-size: 22px;
+  }
+}
+
 @media all and (max-width: 320px) {
   .switch label {
     font-size: 14px;
