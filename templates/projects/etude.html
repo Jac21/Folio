@@ -1,6 +1,6 @@
 <div class="container blog-container">
 	<h1>Etude</h1>
-	<div ng-click="go('/developer')" class="header-back-link">Back</div>
+	<div ng-click="go('/developer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/developer')">Back</div>
 	<hr>
 	<p>One of my favorite pastimes, music, and subsequently the creation process with others can be hindered by a very common issue I've faced the past few years. Distance between those I enjoy working with in-person can halt a set of ideas or project immediately. To assist with ideation, the occasional iPhone recording helps, but can never replace the ferocity an in-person session can bring about, and the abundance of ideas constantly thrown around. On a personal level, I've tried working with varying ways of mitigating that issue of distance, the best solution so far being an organizational endeavor using online hosting tools such as Google Drive and Dropbox.</p>
 	<div class = "responsive-img-text">
@@ -25,4 +25,6 @@
 	<p>In the image above, you can get a sense for what we were going for during the Hackathon. Users would sign-on to the web application "Etude," create their projects, and head to that project's page as seen above. Utilizing D3.js, once the user would upload their initial base track (choosing the title, actual file, etc.) to that project, it would create a root node so as to build off that in future states of the song. Then, once more tracks are created and added, the user could choose to append those new ideas off into branching paths for grouping their ideas into logical units. As shown in the example above, this user chose to create a branch for vocals off the main rhythm, wherein harmonies for two members of the band are then added beyond that.</p>
 
 	<p>Once the user adds or edits their new track, a new state of the project tree is then made, allowing a simplistic "versioning" of how the song is then growing as a whole. Much like version control in the software world, the intent of Etude's functionality was to allow the same remote flexibility between members of the band, whilst still allowing prior versions to be saved and reviewed if necessary.</p>
+
+	<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
 </div>
