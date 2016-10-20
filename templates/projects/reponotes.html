@@ -6,21 +6,21 @@
 	<p>In addition to the functional aspects <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> provides, one which I, and many other developers, enjoy is the allowance of tracking a myriad of projects which entails a large variety of technologies and tools. Building up a project in tandem with learning a toolset is extremely satisfying over long periods of time. However, this can quickly get a tad out of hand as the scope of those projects increase over time.</p>
 
 	<div class = "responsive-img-text">
-		<img class = "responsive-img" src = "dist/images/developer/reponotes/github-glance.PNG" alt="GitHub at a glance"/>
+		<img class = "materialboxed responsive-img" data-caption = "GitHub at a glance" src = "dist/images/developer/reponotes/github-glance.PNG" alt="GitHub at a glance"/>
 		<p>GitHub at a glance</p>
 	</div>
 
 	<p>A simplistic approach I use personally is to just jot down notes and reminders for each project I'm working on at that time. Small pieces of information that help guide me back on track after a certain period of time has passed since I last looked at said project. Besides much more analog methods of keeping track, I failed to find an online tool that assisted in this specific, GitHub-centric use-case. Thus, <a href="https://jac21.github.io/RepoNotes/" target="_blank" rel="noopener noreferrer">RepoNotes</a>:</p>
 
 	<div class = "responsive-img-text">
-		<img class = "responsive-img" src = "dist/images/developer/reponotes/reponotes.png" alt="RepoNotes"/>
+		<img class = "materialboxed responsive-img" data-caption = "RepoNotes" src = "dist/images/developer/reponotes/reponotes.png" alt="RepoNotes"/>
 		<p>RepoNotes</p>
 	</div>
 
 	<p>The intent was to have a long-term persistent page that would allow me to have a few ideas about a particular repository saved until that idea's implementation/discarding. Usage itself is meant to accomplish just that: the user enters their GitHub username in the resulting form field, and submits. That submittal is treated as a request to the <a href="https://developer.github.com/v3/users/" target="_blank" rel="noopener noreferrer">GitHub Users API</a>. A JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener noreferrer">Promise</a> is then resolved to return that user's GitHub repositories, which are then displayed in a simple list format, each with their own identifying title, text area, and save button.</p>
 
 	<div class = "responsive-img-text">
-		<img class = "responsive-img" src = "dist/images/developer/reponotes/reponotes-example.png" alt="RepoNotes"/>
+		<img class = "materialboxed responsive-img" data-caption = "RepoNotes example usage" src = "dist/images/developer/reponotes/reponotes-example.png" alt="RepoNotes Example"/>
 		<p>RepoNotes example usage</p>
 	</div>
 
