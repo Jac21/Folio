@@ -3,6 +3,9 @@
 		.module('folioApp')
 		.controller('DeveloperController', ['$scope', '$location', '$anchorScroll',
 			function($scope, $location, $anchorScroll) {
+				// initialize materialbox
+				$('.materialboxed').materialbox();
+				
 				// set page class
 				$scope.pageClass = 'developer';
 
