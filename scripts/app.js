@@ -4,7 +4,7 @@
 
 	// TODO: https://github.com/angular-ui/ui-router/wiki/Multiple-Named-Views#view-names---relative-vs-absolute-names
 	// TODO: https://scotch.io/tutorials/angular-routing-using-ui-router
-	angular.module('folioApp', ['ui.router', 'ngAnimate'])
+	angular.module('folioApp', ['ui.router', 'responsive-images'])
 		.config(function($stateProvider, $urlRouterProvider, $compileProvider, $locationProvider) {
 
 			// https://code.angularjs.org/1.5.5/docs/guide/production

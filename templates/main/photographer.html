@@ -22,30 +22,9 @@
   <hr>
 
   <div class="row">
-   	<div class = "col s12 m6">
-	  	<img class="materialboxed responsive-img z-depth-2" data-caption="Taken at the Hope Outdoor Gallery in Austin, Texas" src="dist/images/photographer/photos/DSC_0063-min.JPG" alt="Graffiti Park"/>
-	  </div>
-
-  	<div class = "col s12 m6">
-	  	<img class="materialboxed responsive-img z-depth-2" data-caption="Taken at Castillo San Cristóbal in San Juan, Puerto Rico" src="dist/images/photographer/photos/DSC_1201.jpg" alt="Puerto Rico"/>
-	  </div>
-
-	  <div class = "col s12 m6">
-	  	<img class="materialboxed responsive-img z-depth-2" data-caption="Taken at the Hamilton Pool Preserve" src="dist/images/photographer/photos/DSC_0358-min.JPG" alt="Hamilton Pool"/>
-	  </div>
-
-  	<div class = "col s12 m6">
-	  	<img class="materialboxed responsive-img z-depth-2" data-caption="Taken at the Hamilton Pool Preserve" src="dist/images/photographer/photos/DSC_0353-min.JPG" alt="Hamilton Pool"/>
-	  </div>
-
-
-	  <div class = "col s12 m6">
-	  	<img class="materialboxed responsive-img z-depth-2" data-caption="Taken at the Hamilton Pool Preserve" src="dist/images/photographer/photos/DSC_0453-min.JPG" alt="Hamilton Pool"/>
-	  </div>
-
-	  <div class = "col s12 m6">
-	  	<img class="materialboxed responsive-img z-depth-2" data-caption="Taken at the Mohawk in Austin, Texas (Band: Anamanaguchi)" src="dist/images/photographer/photos/DSC_0631.jpg" alt="Anamanaguchi"/>
-	  </div>
+    <div class = "col s12 m6" ng-repeat="image in images">
+      <responsive-image></responsive-image>
+    </div>
   </div>
 
   <h1>Photo Shoots</h1>
