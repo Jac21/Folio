@@ -131,6 +131,44 @@ header a:hover {
 .more-info-link {
   cursor: pointer;
 }
+ 
+/* http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+.card-reveal a {
+  position: relative;
+  color: #ffab40;
+  text-decoration: none;
+}
+
+.card-reveal a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffab40;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.card-reveal a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media all and (max-width: 768px) {
+  .card-reveal a {
+    border-bottom: solid 2px;
+  }
+
+  .card-reveal a:hover:before {
+    visibility: hidden;
+  }
+}
 
 .container h1 {
   text-align: center;
@@ -154,7 +192,7 @@ header a:hover {
 }
 
 .header-back-link:hover {
-  color: #26a69a;
+  color: #ffab40;
 }
 
 .scroll-top-link {
@@ -164,7 +202,7 @@ header a:hover {
 }
 
 .scroll-top-link:hover {
-  color: #26a69a;
+  color: #ffab40;
 }
 
 .container p {
@@ -191,11 +229,40 @@ header a:hover {
 }
 
 .blog-container a {
-  border-bottom: 1px solid;
+  position: relative;
+  color: #ffab40;
+  text-decoration: none;
 }
 
-.blog-container a:hover {
-  border-bottom: none;
+.blog-container a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffab40;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.blog-container a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media all and (max-width: 768px) {
+  .blog-container a {
+    border-bottom: solid 2px;
+  }
+
+  .blog-container a:hover:before {
+    visibility: hidden;
+  }
 }
 
 .blog-container img:hover {
@@ -339,98 +406,3 @@ header a:hover {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-
-
-/* https://scotch.io/tutorials/animating-angularjs-apps-ngview
-  Page-level styles
-
-.ng-enter {
-  z-index: 8888; 
-}
-
-.ng-leave { 
-  z-index: 9999; 
-}
-
-.developer.ng-enter { 
-  animation: slideInLeft 0.5s both ease-in;
-  -webkit-animation:slideInLeft 0.5s both ease-in;
-  -moz-animation:slideInLeft 0.5s both ease-in; 
-}
-
-.developer.ng-leave { 
-  animation: slideOutRight 0.5s both ease-in;
-  -webkit-animation:slideOutRight 0.5s both ease-in;
-  -moz-animation:slideOutRight 0.5s both ease-in;
-}
-
-.photographer.ng-enter { 
-  animation: slideInRight 0.5s both ease-in; 
-  -webkit-animation:slideInRight 0.5s both ease-in;
-  -moz-animation:slideInRight 0.5s both ease-in;
-}
-
-.photographer.ng-leave { 
-  animation: slideOutLeft 0.5s both ease-in;
-  -webkit-animation:slideOutLeft 0.5s both ease-in;
-  -moz-animation:slideOutLeft 0.5s both ease-in;
-}
-
-
-/* ANIMATIONS
-============================================================================= 
-
-/* leaving animations ----------------------------------------- 
-
-/* slide out from the left 
-@keyframes slideOutLeft {
-    to      { transform: translateX(-100%); }
-}
-@-moz-keyframes slideOutLeft {  
-  to    { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes slideOutLeft {
-  to    { -webkit-transform: translateX(-100%); }
-}
-
-/* slide out from the right 
-@keyframes slideOutRight {
-    to      { transform: translateX(100%); }
-}
-@-moz-keyframes slideOutRight {  
-  to    { -moz-transform: translateX(100%); }
-}
-@-webkit-keyframes slideOutRight {
-  to    { -webkit-transform: translateX(100%); }
-}
-
-/* entering animations --------------------------------------- 
-
-/* slide in from the right 
-@keyframes slideInRight {
-    from    { transform:translateX(100%); }
-    to      { transform: translateX(0); }
-}
-@-moz-keyframes slideInRight {
-  from  { -moz-transform:translateX(100%); }
-  to    { -moz-transform: translateX(0); }
-}
-@-webkit-keyframes slideInRight {
-  from  { -webkit-transform:translateX(100%); }
-  to    { -webkit-transform: translateX(0); }
-}
-
-/* slide in from the left 
-@keyframes slideInLeft {
-    from    { transform:translateX(-100%); }
-    to      { transform: translateX(0); }
-}
-@-moz-keyframes slideInLeft {
-    from    { transform:translateX(-100%); }
-    to      { transform: translateX(0); }
-}
-@-webkit-keyframes slideInLeft {
-    from    { transform:translateX(-100%); }
-    to      { transform: translateX(0); }
-}
-*/
