@@ -80,7 +80,6 @@ gulp.task('lib-scripts', function() {
 // linting task
 gulp.task('lint', function() {
 	return gulp.src(config.paths.javascript)
-		.src(config.paths.angularControllersJs)
 		.pipe(lint({config: 'eslint.config.json'}))
 		.pipe(lint.format());
 });
