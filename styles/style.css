@@ -214,12 +214,12 @@ header a:hover {
 */
 
 .blog-container {
-  width: 60%;
+  width: 70%;
 }
 
 @media all and (max-width: 768px) {
   .blog-container {
-    width: 70%;
+    width: 75%;
   }
 }
 
@@ -278,6 +278,17 @@ header a:hover {
 /*
   Image styles
 */
+
+.talk-image:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.talk-div > p {
+  text-align: center;
+  opacity: 0.6;
+  font-size: 0.9em;
+}
 
 .responsive-img {
   margin-bottom: 1em;
