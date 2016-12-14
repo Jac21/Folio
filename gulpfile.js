@@ -5,6 +5,7 @@ var browserSync = require('browser-sync');	// synch browser and code changes
 var lint = require('gulp-eslint');					// lint JS files
 var imagemin = require('gulp-imagemin');		// optimizing images
 var rename = require('gulp-rename');				// optimizing js
+var sourcemaps = require('gulp-sourcemaps'); // sourcemapping!
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
@@ -62,9 +63,11 @@ gulp.task('scripts', ['controller-scripts','lib-scripts'], function() {
 // scripts task
 gulp.task('controller-scripts', function() {
   return gulp.src(config.paths.angularControllersJs)
+    .pipe(sourcemaps.init())
     .pipe(concat('controllerBundle.js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(destConfig.paths.javascript))
 });
 
