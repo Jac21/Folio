@@ -8,7 +8,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  line-height: 3.1;
+  line-height: 3;
   padding: 10vw 2em;
   text-align: center;
 }
@@ -30,6 +30,7 @@
   vertical-align: top;
   width: 120px;
   border-radius: 100px;
+  border: 1px solid white;
 }
 
 .headshot-photo {
@@ -38,6 +39,8 @@
   vertical-align: top;
   width: 220px;
   border-radius: 50px;
+  border: 1px solid white;
+
 }
 
 header h1 {

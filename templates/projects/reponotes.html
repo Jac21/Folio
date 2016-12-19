@@ -20,11 +20,18 @@
 	<p>The intent was to have a long-term persistent page that would allow me to have a few ideas about a particular repository saved until that idea's implementation/discarding. Usage itself is meant to accomplish just that: the user enters their GitHub username in the resulting form field, and submits. That submittal is treated as a request to the <a href="https://developer.github.com/v3/users/" target="_blank" rel="noopener noreferrer">GitHub Users API</a>. A JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener noreferrer">Promise</a> is then resolved to return that user's GitHub repositories, which are then displayed in a simple list format, each with their own identifying title, text area, and save button.</p>
 
 	<div class = "responsive-img-text">
-		<img class = "materialboxed responsive-img" data-caption = "RepoNotes example usage" src = "dist/images/developer/reponotes/reponotes-example.png" alt="RepoNotes Example"/>
+		<img class = "materialboxed responsive-img" data-caption = "RepoNotes example usage" src = "dist/images/developer/reponotes/reponotes-example.png" alt="RepoNotes example usage"/>
 		<p>RepoNotes example usage</p>
 	</div>
 
 	<p>At this point, the user can then enter text in the particular repository of choice, and save that note. This is accomplished using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener noreferrer">localStorage</a> API, saving that note data to the user's browser storage for long-term persistence. This can be done for each of their repositories, and edited and modified and seen fit, leading to a simple and straightforward tracking of any "TODOs" or pending ideas. An additional feature allows the user to also export the current state of notes to a text file for any safe-keeping and tracking outside of the web application.</p>
+
+	<p>Another technology utilized in the vein of increasing usability akin to modern "Progressive Web Apps" are Service Workers for caching the needed assets to enable offline use. In the event of the user going offline partway through usage, or accessing the site when not on a stable connection, the instantiated service worker loads the cached scripting and styles so as to provide a seamless user experience.</p>
+
+	<div class = "responsive-img-text">
+		<img class = "materialboxed responsive-img" data-caption = "Offline example usage - Service Worker instantiated on the right-hand side" src = "dist/images/developer/reponotes/offline-example.PNG" alt="Offline example usage - Service Worker instantiated on the right-hand side"/>
+		<p>Offline example usage - Service Worker instantiated on the right-hand side</p>
+	</div>
 
 	<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
 </div>
