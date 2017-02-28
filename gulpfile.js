@@ -52,7 +52,7 @@ gulp.task('images', function() {
 });
 
 // scripts task
-gulp.task('scripts', ['controller-scripts','lib-scripts'], function() {
+gulp.task('scripts', ['controller-scripts'], function() {
   return gulp.src(config.paths.javascript)
     .pipe(concat('bundle.js'))
     .pipe(rename({ suffix: '.min' }))
@@ -69,15 +69,6 @@ gulp.task('controller-scripts', function() {
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(destConfig.paths.javascript))
-});
-
-// lib-scripts task
-gulp.task('lib-scripts', function() {
-  return gulp.src(config.paths.libJavascript)
-    .pipe(concat('libBundle.js'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
-    .pipe(gulp.dest(destConfig.paths.libJavascript))
 });
 
 // linting task
