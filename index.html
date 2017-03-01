@@ -27,7 +27,13 @@
 	</head>
 	<body ng-cloak>
 
-		<div class = "page {{pageClass}}" ui-view autoscroll="true"></div>
+		<div class = "page {{pageClass}}" ui-view autoscroll="true">
+			<noscript>
+		      <h4 style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica; text-align: center;">
+		        Sorry, JavaScript needs to be enabled in order to run this website (Alternatively, you can visit my more static site at <a target="_blank" rel="noopener noreferrer" href="http://jac21.github.io/">http://jac21.github.io/</a>).
+		      </h4>
+		    </noscript>
+		</div>
 
 		<!-- Import Angular libs -->
 		<script type="text/javascript" src="scripts/lib/angular.min.js"></script>
