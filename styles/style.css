@@ -188,10 +188,14 @@ header a:hover {
   text-align: center;
 }
 
-.header-back-link {
+.page-nav-options {
   text-align: center;
+}
+
+.header-back-link {
   margin: 0 auto;
   cursor: pointer;
+  display: inline-block;
 }
 
 .header-back-link:hover {
@@ -199,9 +203,9 @@ header a:hover {
 }
 
 .scroll-top-link {
-  text-align: center;
   margin: 0 auto 50px auto;
   cursor: pointer;
+  display: inline-block;
 }
 
 .scroll-top-link:hover {
@@ -308,12 +312,12 @@ header a:hover {
 }
 
 .caption {
-  text-align: center;
+  display: inline-block;
   cursor: pointer;
 }
 
 .caption:hover {
-  color: #26a69a;
+  color: #ffab40;
 }
 
 .shoot-img {

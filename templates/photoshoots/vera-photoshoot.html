@@ -1,7 +1,9 @@
 <div class = "container">
 	<h1>Vera</h1>
 	<p class="shoot-text">Taken in Walnut Creek Metro Park in Austin, Texas - Modeled by Vera Zhou</p>
-	<div ng-click="go('/photographer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/photographer')">Back</div>
+	<div class="page-nav-options">
+		<div ng-click="go('/photographer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/photographer')">Back</div>
+	</div>
 	<hr>
 
 	<div class = "animated fadeIn">
@@ -30,5 +32,7 @@
 		</div>
 	</div>
 
-	<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
+	<div class="page-nav-options">
+		<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
+	</div>
 </div>

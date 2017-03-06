@@ -1,6 +1,8 @@
 <div class="container blog-container">
 	<h1>RepoNotes</h1>
-	<div ng-click="go('/developer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/developer')">Back</div>
+	<div class="page-nav-options">
+		<div ng-click="go('/developer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/developer')">Back</div>
+	</div>
 	<hr>
 
 	<p>In addition to the functional aspects <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> provides, one which I, and many other developers, enjoy is the allowance of tracking a myriad of projects which entails a large variety of technologies and tools. Building up a project in tandem with learning a toolset is extremely satisfying over long periods of time. However, this can quickly get a tad out of hand as the scope of those projects increase over time.</p>
@@ -33,5 +35,7 @@
 		<p>Offline example usage - Service Worker instantiated on the right-hand side</p>
 	</div>
 
-	<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
+	<div class="page-nav-options">
+		<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
+	</div>
 </div>

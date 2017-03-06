@@ -1,6 +1,8 @@
 <div class="container blog-container">
 	<h1>SkillSet</h1>
-	<div ng-click="go('/developer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/developer')">Back</div>
+	<div class="page-nav-options">
+		<div ng-click="go('/developer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/developer')">Back</div>
+	</div>
 	<hr>
 
 	<p>Soon after graduation and right after starting my first role out of university, I found myself scrambling to build my resume and a network of contacts whilst gaining valuable insight into the hiring process. I basically felt the need to be in a good position to obtain a job or start a career with a strong backing and portfolio at my disposal. Whilst perusing for better ways of managing the myriad of methods resumes are created and maintained, I came across <a href="https://jsonresume.org/" target="_blank" rel="noopener noreferrer">JSON Resume</a>.</p>
@@ -49,5 +51,7 @@
 		<p>JSON Resume Community Projects page</p>
 	</div>
 
-	<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
+	<div class="page-nav-options">
+		<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
+	</div>
 </div>
