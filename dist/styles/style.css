@@ -1,0 +1,414 @@
+/*
+  Header element styles
+*/
+
+.header-dev {
+  background-color: #263d36;
+  background-image: url("../dist/images/developer/developer-header.jpeg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 3;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+.header-photo {
+  background-color: #263d36;
+  background-image: url("../dist/images/photographer/photo-banner-min_redux.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1;
+  padding: 10vw 1em;
+  text-align: center;
+}
+
+.headshot-dev {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+  border-radius: 100px;
+  border: 1px solid white;
+}
+
+.headshot-photo {
+  display: inline-block;
+  height: 150px;
+  vertical-align: top;
+  width: 220px;
+  border-radius: 50px;
+  border: 1px solid white;
+
+}
+
+header h1 {
+  color: white;
+  font-size: 2.7em;
+  font-weight: 300;
+}
+
+header a {
+  border: 1px solid #26a69a;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background:  #26a69a;
+  color: white;
+}
+
+/*
+  Switch styles
+*/
+
+.switch {
+	margin: 1em;
+	text-align: center;
+}
+
+.switch label {
+	font-size: 18px;
+}
+
+@media all and (min-width: 768px) {
+  .switch label {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .switch label {
+    font-size: 14px;
+  }
+}
+
+.switch label .lever {
+	background-color: #84c7c1;
+	width: 55px;
+}
+
+@media all and (max-width: 320px) {
+  .switch label .lever {
+    width: 50px;
+  }
+}
+
+.switch label .lever::after {
+	background-color: #26a69a;
+}
+
+.switch label input[type="checkbox"]:checked + .lever::after {
+	left: 37px;
+}
+
+.switch label .lever:hover { 
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+}
+
+/*
+  Card styles
+*/
+
+@media all and (max-width: 768px) {
+  .card-link {
+    margin-bottom: 1em !important;
+  }
+}
+
+.more-info-link {
+  cursor: pointer;
+}
+ 
+/* http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+.card-reveal a {
+  position: relative;
+  color: #ffab40;
+  text-decoration: none;
+}
+
+.card-reveal a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffab40;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.card-reveal a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media all and (max-width: 768px) {
+  .card-reveal a {
+    border-bottom: solid 2px;
+  }
+
+  .card-reveal a:hover:before {
+    visibility: hidden;
+  }
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2.7em;
+  font-weight: 300;
+}
+
+.container hr {
+  width: 200px;
+  margin-bottom: 2em;
+}
+
+.shoot-text {
+  text-align: center;
+}
+
+.page-nav-options {
+  text-align: center;
+}
+
+.header-back-link {
+  margin: 0 auto;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.header-back-link:hover {
+  color: #ffab40;
+}
+
+.scroll-top-link {
+  margin: 0 auto 50px auto;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.scroll-top-link:hover {
+  color: #ffab40;
+}
+
+.container p {
+  margin-bottom: 3em;
+}
+
+/*
+  Development-Process styles
+*/
+
+.blog-container {
+  width: 70%;
+}
+
+@media all and (max-width: 768px) {
+  .blog-container {
+    width: 75%;
+  }
+}
+
+.blog-container p {
+  padding: 2em 0em;
+  font-size: 17px;
+}
+
+.blog-container a {
+  position: relative;
+  color: #ffab40;
+  text-decoration: none;
+}
+
+.blog-container a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffab40;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.blog-container a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media all and (max-width: 768px) {
+  .blog-container a {
+    border-bottom: solid 2px;
+  }
+
+  .blog-container a:hover:before {
+    visibility: hidden;
+  }
+}
+
+.blog-container img:hover {
+  opacity: 0.7;
+}
+
+.responsive-img-text > p {
+  text-align: center;
+  opacity: 0.6;
+  font-size: 0.9em;
+}
+
+/*
+  Image styles
+*/
+
+.talk-image:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.talk-div > p {
+  text-align: center;
+  opacity: 0.6;
+  font-size: 0.9em;
+}
+
+.responsive-img {
+  margin-bottom: 1em;
+}
+
+@media all and (max-width: 600px) {
+  .responsive-img {
+    margin-bottom: 2em;
+  }
+}
+
+.shoot-main-img {
+  cursor: pointer;
+}
+
+.caption {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.caption:hover {
+  color: #ffab40;
+}
+
+.shoot-img {
+  margin-bottom: 4em;
+}
+
+.image-overlay-container {
+  position: absolute;
+}
+
+.image-overlay-container i {
+  padding-top: 5px;
+  color: white;
+}
+
+.image-overlay-container i:hover {
+  cursor: pointer;
+  color: #9E4396;
+}
+
+@media all and (max-width: 375px) {
+  .image-overlay-container i {
+    font-size: 3em;
+  }
+}
+
+/*
+  Contact FAB Button Styles
+*/
+
+.btn-floating {
+  background-color: #26a69a;
+}
+
+.btn-floating:hover {
+  background-color: #26a69a;
+}
+
+@media all and (max-width: 768px) {
+  .fixed-action-btn {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .btn-floating.btn-large {
+    width: 45.5px;
+    height: 45.5px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .btn-floating.btn-large i {
+    line-height: 45.5px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .fixed-action-btn.horizontal ul {
+    right: 45px;
+    top: 34%;
+  }
+}
+
+/*
+  Animate.css entries
+*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

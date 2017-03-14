@@ -6,6 +6,7 @@ var lint = require('gulp-eslint');					// lint JS files
 var imagemin = require('gulp-imagemin');		// optimizing images
 var rename = require('gulp-rename');				// optimizing js
 var sourcemaps = require('gulp-sourcemaps'); // sourcemapping!
+var uncss = require('gulp-uncss');			// shedding CSS!
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
@@ -18,6 +19,7 @@ var config = {
 		files: "**/*.*",
 		images: "images/**/*.*",
 		javascript: "scripts/*.js",
+		styles: "styles/*.css",
 		angularControllersJs: "scripts/controllers/*.js",
 		libJavascript: "scripts/lib/*.js"
 	}
@@ -28,6 +30,7 @@ var destConfig = {
 	paths: {
 		images: 'dist/images',
 		javascript: 'dist/scripts',
+		styles: 'dist/styles',
 		libJavascript: 'dist/scripts/lib'
 	}
 }
@@ -78,6 +81,15 @@ gulp.task('lint', function() {
 		.pipe(lint.format());
 });
 
+//uncss-ing task
+gulp.task('uncss', function () {
+    return gulp.src(config.paths.styles)
+        .pipe(uncss({
+            html: ['index.html', 'templates/**/*.html']
+        }))
+        .pipe(gulp.dest(destConfig.paths.styles));
+});
+
 // watch task for any html/js changes
 gulp.task('watch', function() {
 	gulp.watch(config.paths.js, ['lint']);
@@ -85,6 +97,7 @@ gulp.task('watch', function() {
 	gulp.watch(config.paths.javascript, ['scripts']);
 	gulp.watch(config.paths.angularControllersJs, ['controller-scripts']);
 	gulp.watch(config.paths.images, ['images']);
+	gulp.watch(config.paths.styles, ['uncss']);
 });
 
 // default gulp tasks
