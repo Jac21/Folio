@@ -362,13 +362,6 @@ header a:hover {
   background-color: #26a69a;
 }
 
-@media all and (max-width: 768px) {
-  .fixed-action-btn {
-    right: 10px;
-    bottom: 10px;
-  }
-}
-
 @media all and (max-width: 375px) {
   .btn-floating.btn-large {
     width: 45.5px;

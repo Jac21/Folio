@@ -7,7 +7,8 @@ module.exports = {
     'scripts/directives/*.js',
     'scripts/*.js',
     'fonts/**',
-    'styles/**.css',
+    'styles/*.css',
+    'dist/styles/*.css',
     'dist/images/**',
     'dist/scripts/*'
   ],
