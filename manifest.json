@@ -2,9 +2,9 @@
   "name": "Portfolio of Jeremy Cantu",
   "short_name": "Folio",
   "icons": [{
-        "src": "favicon.ico",
-        "type": "ico",
-        "sizes": "32x32"
+        "src": "favicon.png",
+        "type": "png",
+        "sizes": "512x512"
       }],
   "start_url": "/#/developer",
   "scope": "/",
