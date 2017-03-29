@@ -1,12 +1,13 @@
 'use strict';
 
 var gulp = require('gulp');
-var browserSync = require('browser-sync');	// synch browser and code changes		
+var browserSync = require('browser-sync');	// sync browser and code changes		
 var lint = require('gulp-eslint');					// lint JS files
 var imagemin = require('gulp-imagemin');		// optimizing images
 var rename = require('gulp-rename');				// optimizing js
 var sourcemaps = require('gulp-sourcemaps'); // sourcemapping!
 var uncss = require('gulp-uncss');			// shedding CSS!
+var crass = require('gulp-crass');			// minifying CSS!
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
@@ -31,6 +32,7 @@ var destConfig = {
 		images: 'dist/images',
 		javascript: 'dist/scripts',
 		styles: 'dist/styles',
+		stylesUncss: 'dist/stylesUncss',
 		libJavascript: 'dist/scripts/lib'
 	}
 }
@@ -87,6 +89,13 @@ gulp.task('uncss', function () {
         .pipe(uncss({
             html: ['index.html', 'templates/**/*.html']
         }))
+        .pipe(gulp.dest(destConfig.paths.stylesUncss));
+});
+
+// crass, used for CSS minification
+gulp.task('crass', function() {
+  return gulp.src(config.paths.styles)
+        .pipe(crass({pretty:false}))
         .pipe(gulp.dest(destConfig.paths.styles));
 });
 
@@ -98,6 +107,7 @@ gulp.task('watch', function() {
 	gulp.watch(config.paths.angularControllersJs, ['controller-scripts']);
 	gulp.watch(config.paths.images, ['images']);
 	gulp.watch(config.paths.styles, ['uncss']);
+	gulp.watch(config.paths.styles, ['crass']);
 });
 
 // default gulp tasks

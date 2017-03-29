@@ -21,6 +21,7 @@
     "browser-sync": "^2.7.1",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
+    "gulp-crass": "^0.2.0",
     "gulp-eslint": "^0.15.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-rename": "^1.2.2",

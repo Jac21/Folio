@@ -7,8 +7,9 @@ module.exports = {
     'scripts/directives/*.js',
     'scripts/*.js',
     'fonts/**',
-    'styles/*.css',
-    'dist/styles/*.css',
+    'dist/styles/style.css',
+    'dist/styles/materialize.min.css',
+    'dist/stylesUncss/material-design-iconic-font.css',
     'dist/images/**',
     'dist/scripts/*'
   ],

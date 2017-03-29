@@ -4,7 +4,7 @@
 
 .header-dev {
   background-color: #263d36;
-  background-image: url("../images/developer/developer-header.jpeg");
+  background-image: url("../dist/images/developer/developer-header.jpeg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@
 
 .header-photo {
   background-color: #263d36;
-  background-image: url("../images/photographer/photo-banner-min_redux.jpg");
+  background-image: url("../dist/images/photographer/photo-banner-min_redux.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,12 +47,6 @@ header h1 {
   color: white;
   font-size: 2.7em;
   font-weight: 300;
-}
-
-header h2 {
-  color: white;
-  font-size: 1.6em;
-  font-weight: 150;
 }
 
 header a {
@@ -341,12 +335,6 @@ header a:hover {
 @media all and (max-width: 375px) {
   .image-overlay-container i {
     font-size: 3em;
-  }
-}
-
-@media all and (max-width: 375px) {
-  .materialbox-caption {
-    margin-bottom: 50px;
   }
 }
 
