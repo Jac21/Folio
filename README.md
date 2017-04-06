@@ -1,9 +1,7 @@
-Folio
-===================
+# Folio
 Live site: 
 >- https://www.jeremycantu.com
 
-----------
 Built using the following resources:
 ----------------------------------------------------
 
