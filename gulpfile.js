@@ -106,7 +106,6 @@ gulp.task('watch', function() {
 	gulp.watch(config.paths.javascript, ['scripts']);
 	gulp.watch(config.paths.angularControllersJs, ['controller-scripts']);
 	gulp.watch(config.paths.images, ['images']);
-	gulp.watch(config.paths.styles, ['uncss']);
 	gulp.watch(config.paths.styles, ['crass']);
 });
 
