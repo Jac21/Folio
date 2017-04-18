@@ -125,6 +125,13 @@ header a:hover {
   Card styles
 */
 
+
+@media all and (max-width: 768px) {
+  .card.large .card-image, .card.medium .card-image, .card.small .card-image {
+    max-height: 57%;
+  }
+}
+
 @media all and (max-width: 768px) {
   .card-link {
     margin-bottom: 1em !important;
