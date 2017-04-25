@@ -228,7 +228,7 @@ header a:hover {
 */
 
 .blog-container {
-  width: 70%;
+  width: 73%;
 }
 
 @media all and (max-width: 768px) {
@@ -240,6 +240,7 @@ header a:hover {
 .blog-container p {
   padding: 2em 0em;
   font-size: 17px;
+  line-height: 33px;
 }
 
 .blog-container a {
