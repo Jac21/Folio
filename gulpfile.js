@@ -1,15 +1,14 @@
 'use strict';
 
-var gulp = require('gulp');
-var browserSync = require('browser-sync');	// sync browser and code changes		
-var lint = require('gulp-eslint');					// lint JS files
-var imagemin = require('gulp-imagemin');		// optimizing images
-var rename = require('gulp-rename');				// optimizing js
-var sourcemaps = require('gulp-sourcemaps'); // sourcemapping!
-var uncss = require('gulp-uncss');			// shedding CSS!
-var crass = require('gulp-crass');			// minifying CSS!
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
+var gulp = require('gulp');						// gulping!
+var browserSync = require('browser-sync');		// sync browser with code changes!		
+var lint = require('gulp-eslint');				// lint JS files!
+var imagemin = require('gulp-imagemin');		// optimizing images!
+var rename = require('gulp-rename');			// optimizing js
+var sourcemaps = require('gulp-sourcemaps');	// sourcemapping!
+var uncss = require('gulp-uncss');				// shedding CSS!
+var crass = require('gulp-crass');				// minifying CSS!
+var concat = require('gulp-concat');			// concat helper
 
 // configuration object
 var config = {
@@ -61,7 +60,6 @@ gulp.task('scripts', ['controller-scripts'], function() {
   return gulp.src(config.paths.javascript)
     .pipe(concat('bundle.js'))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
     .pipe(gulp.dest(destConfig.paths.javascript))
 });
 
@@ -71,7 +69,6 @@ gulp.task('controller-scripts', function() {
     .pipe(sourcemaps.init())
     .pipe(concat('controllerBundle.js'))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(destConfig.paths.javascript))
 });
