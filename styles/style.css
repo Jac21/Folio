@@ -8,7 +8,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  line-height: 3;
   padding: 10vw 2em;
   text-align: center;
 }
@@ -19,7 +19,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  line-height: 1;
   padding: 10vw 1em;
   text-align: center;
 }
