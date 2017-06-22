@@ -21,17 +21,17 @@
 				   {
 				      "caption":"Taken at the Hamilton Pool Preserve",
 				      "url":"dist/images/photographer/photos/DSC_0358-min.JPG",
-				      "alt":"Hamilton Pool"
+				      "alt":"Hamilton Pool Waterfall"
 				   },
 				   {
 				      "caption":"Taken at the Hamilton Pool Preserve",
 				      "url":"dist/images/photographer/photos/DSC_0353-min.JPG",
-				      "alt":"Hamilton Pool"
+				      "alt":"Hamilton Pool Trail"
 				   },
 				   {
 				      "caption":"Taken at the Hamilton Pool Preserve",
 				      "url":"dist/images/photographer/photos/DSC_0453-min.JPG",
-				      "alt":"Hamilton Pool"
+				      "alt":"Hamilton Pool Butterfly"
 				   },
 				   {
 				      "caption":"Taken at the Mohawk in Austin, Texas (Band: Anamanaguchi)",
