@@ -14,9 +14,9 @@
 				      "alt" : "Graffiti Park in Austin, Texas"
 				   },
 				   {
-				      "caption" : "Taken at Castillo San Cristóbal in San Juan, Puerto Rico",
-				      "url" : "dist/images/photographer/photos/DSC_1201.jpg",
-				      "alt" : "Pier in San Juan, Puerto Rico"
+				      "caption" : "Taken at the Hamilton Pool Preserve near Dripping Springs, Texas",
+				      "url" : "dist/images/photographer/photos/DSC_0358-min.JPG",
+				      "alt" : "Hamilton Pool Waterfall near Dripping Springs, Texas"
 				   },
 				   {
 				      "caption" : "Taken at the Buen Retiro Park in Madrid, Spain",
@@ -24,19 +24,19 @@
 				      "alt" : "Monument to Alfonso XII in Madrid, Spain"
 				   },
 				   {
-				      "caption" : "Taken at the Hamilton Pool Preserve",
-				      "url" : "dist/images/photographer/photos/DSC_0358-min.JPG",
-				      "alt" : "Hamilton Pool Waterfall"
+				      "caption" : "Taken at Castillo San Cristóbal in San Juan, Puerto Rico",
+				      "url" : "dist/images/photographer/photos/DSC_1201.jpg",
+				      "alt" : "Pier in San Juan, Puerto Rico"
 				   },
 				   {
-				      "caption" : "Taken at the Hamilton Pool Preserve",
+				      "caption" : "Taken at the Hamilton Pool Preserve near Dripping Springs, Texas",
 				      "url" : "dist/images/photographer/photos/DSC_0453-min.JPG",
-				      "alt" : "Hamilton Pool Butterfly"
+				      "alt" : "Hamilton Pool Butterfly near Dripping Springs, Texas"
 				   },
 				   {
 				      "caption" : "Taken at the Mohawk in Austin, Texas (Band: Anamanaguchi)",
 				      "url" : "dist/images/photographer/photos/DSC_0631.jpg",
-				      "alt" : "Anamanaguchi at the Mohawk"
+				      "alt" : "Anamanaguchi at the Mohawk in Austin, Texas"
 				   }
 				];
 				

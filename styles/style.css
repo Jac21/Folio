@@ -358,6 +358,10 @@ header a:hover {
   }
 }
 
+.materialbox-caption {
+  line-height: 20px;
+}
+
 /*
   Contact FAB Button Styles
 */

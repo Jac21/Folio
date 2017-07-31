@@ -41,9 +41,9 @@
 		  .state('tfstoolset', {
 		    url: '/tfstoolset',
 		    templateUrl: 'templates/projects/tfstoolset.html',
-		    controller: 'DeveloperController'
-		  });
+				controller: 'DeveloperController'
+			});
 
-		  $urlRouterProvider.otherwise('/developer');
+			$urlRouterProvider.otherwise('/developer');
 		});
 })();
