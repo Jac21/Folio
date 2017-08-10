@@ -395,6 +395,21 @@ header a:hover {
 }
 
 /*
+  Accessibility
+*/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/*
   Animate.css entries
 */
 
@@ -428,19 +443,4 @@ header a:hover {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-}
-
-/*
-  Accessibility
-*/
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
 }
