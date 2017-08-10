@@ -45,5 +45,10 @@
 			});
 
 			$urlRouterProvider.otherwise('/developer');
+
+			$locationProvider.html5Mode({
+			  enabled: true,
+			  requireBase: true
+			});
 		});
 })();
