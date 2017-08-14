@@ -14,7 +14,7 @@ var concat = require('gulp-concat');			// concat helper
 var config = {
 	proxyUrl: "http://localhost:8080",
 	browser: "chrome",
-	port: 7000,
+	port: 7001,
 	paths: {
 		files: "**/*.*",
 		images: "images/**/*.*",

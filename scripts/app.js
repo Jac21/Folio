@@ -2,7 +2,7 @@
 (function() {
 	'use strict';
 
-	angular.module('folioApp', ['ui.router', 'responsive-images'])
+	angular.module('folioApp', ['ui.router', 'responsive-images']) // eslint-disable-line no-undef
 		.config(function($stateProvider, $urlRouterProvider, $compileProvider, $locationProvider) {
 
 		$compileProvider.debugInfoEnabled(false);

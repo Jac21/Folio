@@ -14,6 +14,23 @@
 				  $location.path(path);
 				};
 
+				// page specific objects
+				$scope.developerHeadshot = {
+					"url":"dist/images/developer/headshot-dev.png",
+					"alt":"developer headshot"
+				};
+
+				$scope.ghostButtonLink = {
+					"url":"https://www.github.com/Jac21"
+				};
+
+				$scope.fabButtonLinks = {
+					"email":"mailto:mail@jeremycantu.com",
+					"file":"https://jac21.github.io",
+					"github":"https://www.github.com/Jac21",
+					"linkedin":"https://www.linkedin.com/in/jeremycantu"
+				};
+
 				// utility function to add active css class to target element
 				$scope.activate = function(event) {
 					$(event.target).addClass('active');
