@@ -22,17 +22,17 @@
 				$scope.images = [
 					{
 						"caption": "Taken at the Hope Outdoor Gallery in Austin, Texas",
-						"url": "dist/images/photographer/photos/DSC_0063-min.JPG",
+						"url": "dist/images/photographer/photos/DSC_0063.JPG",
 						"alt": "Graffiti Park in Austin, Texas"
 					},
 					{
 						"caption": "Taken at the Hamilton Pool Preserve near Dripping Springs, Texas",
-						"url": "dist/images/photographer/photos/DSC_0358-min.JPG",
+						"url": "dist/images/photographer/photos/DSC_0358.JPG",
 						"alt": "Hamilton Pool Waterfall near Dripping Springs, Texas"
 					},
 					{
 						"caption": "Taken at the Buen Retiro Park in Madrid, Spain",
-						"url": "dist/images/photographer/photos/DSC_4544-min.JPG",
+						"url": "dist/images/photographer/photos/DSC_4544.JPG",
 						"alt": "Monument to Alfonso XII in Madrid, Spain"
 					},
 					{
@@ -42,7 +42,7 @@
 					},
 					{
 						"caption": "Taken at the Hamilton Pool Preserve near Dripping Springs, Texas",
-						"url": "dist/images/photographer/photos/DSC_0453-min.JPG",
+						"url": "dist/images/photographer/photos/DSC_0453.JPG",
 						"alt": "Hamilton Pool Butterfly near Dripping Springs, Texas"
 					},
 					{
