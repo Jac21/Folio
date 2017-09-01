@@ -9,6 +9,7 @@ var sourcemaps = require('gulp-sourcemaps');	// sourcemapping!
 var uncss = require('gulp-uncss');				// shedding CSS!
 var crass = require('gulp-crass');				// minifying CSS!
 var concat = require('gulp-concat');			// concat helper
+var historyApiFallback = require('connect-history-api-fallback'); // local development helper!
 
 // configuration object
 var config = {
@@ -43,7 +44,8 @@ gulp.task('browser-sync', function() {
         browser: config.browser,
         port: config.port,
         server: {
-        	baseDir: './'
+        	baseDir: './',
+        	middleware: [ historyApiFallback() ]
         }
 	});
 });
