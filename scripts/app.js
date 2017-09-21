@@ -44,11 +44,6 @@
 			controller: "DeveloperController"
 		});
 
-			$urlRouterProvider.otherwise("/developer");
-
-			$locationProvider.html5Mode({
-				enabled: true,
-				requireBase: true
-			});
+		$urlRouterProvider.otherwise("/developer");
 		});
 })();
