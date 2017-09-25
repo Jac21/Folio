@@ -5,49 +5,83 @@
 	</div>
 	<hr>
 
-	<p>Soon after graduation and right after starting my first role out of university, I found myself scrambling to build my resume and a network of contacts whilst gaining valuable insight into the hiring process. I basically felt the need to be in a good position to obtain a job or start a career with a strong backing and portfolio at my disposal. Whilst perusing for better ways of managing the myriad of methods resumes are created and maintained, I came across <a href="https://jsonresume.org/" target="_blank" rel="noopener noreferrer">JSON Resume</a>.</p>
+	<p>Soon after graduation and right after starting my first role out of university, I found myself scrambling to build my resume
+		and a network of contacts whilst gaining valuable insight into the hiring process. I basically felt the need to be in a
+		good position to obtain a job or start a career with a strong backing and portfolio at my disposal. Whilst perusing for
+		better ways of managing the myriad of methods resumes are created and maintained, I came across <a href="https://jsonresume.org/"
+		 target="_blank" rel="noopener noreferrer">JSON Resume</a>.</p>
 
-	<div class = "responsive-img-text">
-		<img class = "materialboxed responsive-img" data-caption = "JSON Resume's Homepage" src = "dist/images/developer/skillset/json-resume.PNG" alt="JSON Resume homepage"/>
+	<div class="responsive-img-text">
+		<img class="materialboxed responsive-img" data-caption="JSON Resume's Homepage" src="dist/images/developer/skillset/json-resume.PNG"
+		 alt="JSON Resume homepage" />
 		<p>JSON Resume's Homepage</p>
 	</div>
 
-	<p>JSON Resume is a fantastic idea. The basic premise involves collecting and formatting pieces of information commonly associated with resumes (anything from basic contact information to education and skills) into a JSON object. This object can then be used to generate PDFs or websites of a resume using a variety of themes, while at the same time, creating a standard for developers to maintain the aformentioned and oft-repeated information.</p>
+	<p>JSON Resume is a fantastic idea. The basic premise involves collecting and formatting pieces of information commonly associated
+		with resumes (anything from basic contact information to education and skills) into a JSON object. This object can then
+		be used to generate PDFs or websites of a resume using a variety of themes, while at the same time, creating a standard
+		for developers to maintain the aformentioned and oft-repeated information.</p>
 
-	<div class = "responsive-img-text">
-		<img class = "materialboxed responsive-img" data-caption = "Some of JSON Resume's schema" src = "dist/images/developer/skillset/schema.PNG" alt="JSON Resume schema"/>
+	<div class="responsive-img-text">
+		<img class="materialboxed responsive-img" data-caption="Some of JSON Resume's schema" src="dist/images/developer/skillset/schema.PNG"
+		 alt="JSON Resume schema" />
 		<p>Some of JSON Resume's schema</p>
 	</div>
 
-	<p>Utilizing the standard's pre-built website templates, I was able to get a simplistic <a href="https://jac21.github.io/" target="_blank" rel="noopener noreferrer">resume site</a> up with little hassle, as well as maintain my information in order across my own personal resume and LinkedIn. One small component I did forsee using some visual enhancement was the "Skills" section of the standard. This stemmed primarily from both the nature of the industry (ergo, the focus on the raw aptitude of the candidate themselves, including the languages/frameworks/etc. they're able to work with), as well as my preference for the visual over the plainly textual.</p>
+	<p>Utilizing the standard's pre-built website templates, I was able to get a simplistic <a href="https://jac21.github.io/"
+		 target="_blank" rel="noopener noreferrer">resume site</a> up with little hassle, as well as maintain my information in
+		order across my own personal resume and LinkedIn. One small component I did forsee using some visual enhancement was the
+		"Skills" section of the standard. This stemmed primarily from both the nature of the industry (ergo, the focus on the raw
+		aptitude of the candidate themselves, including the languages/frameworks/etc. they're able to work with), as well as my
+		preference for the visual over the plainly textual.</p>
 
-	<p>With the basic concept in mind, I spent some time browsing the various basic vizualizations that the JavaScript library <a href="https://d3js.org/" target="_blank" rel="noopener noreferrer">D3.js</a> was used to create, landing finally on the <a href="https://bl.ocks.org/mbostock/4062045" target="_blank" rel="noopener noreferrer">Force Directed Graph</a>, which I felt conveyed the information was most necessary in accordance with the set of skills a programmer posseses.</p>
+	<p>With the basic concept in mind, I spent some time browsing the various basic vizualizations that the JavaScript library
+		<a href="https://d3js.org/" target="_blank" rel="noopener noreferrer">D3.js</a> was used to create, landing finally on
+		the <a href="https://bl.ocks.org/mbostock/4062045" target="_blank" rel="noopener noreferrer">Force Directed Graph</a>,
+		which I felt conveyed the information was most necessary in accordance with the set of skills a programmer posseses.</p>
 
-	<div class = "responsive-img-text">
-		<img class = "materialboxed responsive-img" data-caption = "Example of a basic Force-Directed-Graph" src = "dist/images/developer/skillset/fdg.PNG" alt="fdg"/>
+	<div class="responsive-img-text">
+		<img class="materialboxed responsive-img" data-caption="Example of a basic Force-Directed-Graph" src="dist/images/developer/skillset/fdg.PNG"
+		 alt="fdg" />
 		<p>Example of a basic Force-Directed-Graph</p>
 	</div>
 
-	<p>With the gist of the final deliverable in mind, I set out wrangling D3.js and an example Force Directed Graph implementation together. The application primarily intakes a user's full JSON Resume object, converts the skills section into a more D3 friendly CSV format, and then allows for the user to re-enter that generated CSV to generate their graph. An example of that CSV output is shown below:</p>
+	<p>With the gist of the final deliverable in mind, I set out wrangling D3.js and an example Force Directed Graph implementation
+		together. The application primarily intakes a user's full JSON Resume object, converts the skills section into a more D3
+		friendly CSV format, and then allows for the user to re-enter that generated CSV to generate their graph. An example of
+		that CSV output is shown below:</p>
 
-	<div class = "responsive-img-text">
-		<img class = "materialboxed responsive-img" data-caption = "SkillSet converter output" src = "dist/images/developer/skillset/output-example.PNG" alt="CSV output"/>
+	<div class="responsive-img-text">
+		<img class="materialboxed responsive-img" data-caption="SkillSet converter output" src="dist/images/developer/skillset/output-example.PNG"
+		 alt="CSV output" />
 		<p>SkillSet converter output</p>
 	</div>
 
-	<p>Some things to note are the 'source' and 'target' columns, which are derived from the JSON resume. These determine where the overall points in the graph are demarcated. Wherein the JSON resume, the schema dictates a "name" and "keywords" array under that skill name, the converter uses the name as the root node, and the keywords as its children.</p>
+	<p>Some things to note are the 'source' and 'target' columns, which are derived from the JSON resume. These determine where
+		the overall points in the graph are demarcated. Wherein the JSON resume, the schema dictates a "name" and "keywords" array
+		under that skill name, the converter uses the name as the root node, and the keywords as its children.</p>
 
-	<div class = "responsive-img-text">
-		<img class = "materialboxed responsive-img" data-caption = "Example SkillSet output graph" src = "dist/images/developer/skillset/skillset-example.png" alt="skillset output"/>
+	<div class="responsive-img-text">
+		<img class="materialboxed responsive-img" data-caption="Example SkillSet output graph" src="dist/images/developer/skillset/skillset-example.png"
+		 alt="skillset output" />
 		<p>Example SkillSet output graph</p>
 	</div>
-	
-	<p>In order to make the generated graph a bit more intuitive for viewers, I also implemented several visual tweaks to assist with overall expressiveness. Within the 'Skills' object in JSON Resume, a user can also specifiy their strength in that particular skill, ranging from "Beginner," "Intermediate," and "Advanced," which the converter then uses as a final output value for D3 to intake. That value is then used to modify the opacity of that node, with the more faded skills being the weaker of the set, and the more vibrant ones being the stronger of the user.</p>
 
-	<p>You can find the repository with the code (including a minfied distribution version) <a href="https://github.com/Jac21/SkillSet" target="_blank" rel="noopener noreferrer">here</a>, and the site itself once you get your own JSON Resume <a href="http://registry.jsonresume.org/" target="_blank" rel="noopener noreferrer">built</a> up <a href="https://jac21.github.io/SkillSet/" target="_blank" rel="noopener noreferrer">here</a>. My favorite aspect of this little project was definitely its addition to the <a href="https://jsonresume.org/projects/" target="_blank" rel="noopener noreferrer">community projects section</a> on the JSON Resume site itself:</p>
+	<p>In order to make the generated graph a bit more intuitive for viewers, I also implemented several visual tweaks to assist
+		with overall expressiveness. Within the 'Skills' object in JSON Resume, a user can also specifiy their strength in that
+		particular skill, ranging from "Beginner," "Intermediate," and "Advanced," which the converter then uses as a final output
+		value for D3 to intake. That value is then used to modify the opacity of that node, with the more faded skills being the
+		weaker of the set, and the more vibrant ones being the stronger of the user.</p>
 
-	<div class = "responsive-img-text">
-		<img class = "materialboxed responsive-img" data-caption = "JSON Resume Community Projects page" src = "dist/images/developer/skillset/json-resume-projects.PNG" alt="JSON Resume Community Projects page"/>
+	<p>You can find the repository with the code (including a minfied distribution version) <a href="https://github.com/Jac21/SkillSet"
+		 target="_blank" rel="noopener noreferrer">here</a>, and the site itself once you get your own JSON Resume <a href="http://registry.jsonresume.org/"
+		 target="_blank" rel="noopener noreferrer">built</a> up <a href="https://jac21.github.io/SkillSet/" target="_blank" rel="noopener noreferrer">here</a>.
+		My favorite aspect of this little project was definitely its addition to the <a href="https://jsonresume.org/projects/"
+		 target="_blank" rel="noopener noreferrer">community projects section</a> on the JSON Resume site itself:</p>
+
+	<div class="responsive-img-text">
+		<img class="materialboxed responsive-img" data-caption="JSON Resume Community Projects page" src="dist/images/developer/skillset/json-resume-projects.PNG"
+		 alt="JSON Resume Community Projects page" />
 		<p>JSON Resume Community Projects page</p>
 	</div>
 

@@ -1,12 +1,12 @@
 <header class="header-photo">
-	<div>
-		<img class="headshot-photo" src="{{photographerHeadshot.url}}" alt="{{photographerHeadshot.alt}}"/>
-		<h1>Jeremy A. Cantu</h1>
-		<a href="{{ghostButtonLink.url}}" target="_blank" rel="noopener noreferrer">Photographer</a>
-	</div>
+  <div>
+    <img class="headshot-photo" src="{{photographerHeadshot.url}}" alt="{{photographerHeadshot.alt}}" />
+    <h1>Jeremy A. Cantu</h1>
+    <a href="{{ghostButtonLink.url}}" target="_blank" rel="noopener noreferrer">Photographer</a>
+  </div>
 </header>
 
-<div class = "container">
+<div class="container">
 
   <!-- Switch -->
   <div class="switch checked">
@@ -23,7 +23,7 @@
     <hr>
 
     <div class="row">
-      <div class = "col s12 m6" ng-repeat="image in images">
+      <div class="col s12 m6" ng-repeat="image in images">
         <responsive-image></responsive-image>
       </div>
     </div>
@@ -36,17 +36,18 @@
     <hr>
 
     <div class="row">
-    	<div class = "col s12">
+      <div class="col s12">
         <div class="page-nav-options">
-    		  <h2 ng-click="go('/vera-photoshoot')" class="caption" tabindex=0 ng-keydown="($event.which === 13) && go('/vera-photoshoot')">Vera</h2>
+          <h2 ng-click="go('/vera-photoshoot')" class="caption" tabindex=0 ng-keydown="($event.which === 13) && go('/vera-photoshoot')">Vera</h2>
         </div>
         <div>
-        <div class="image-overlay-container">
+          <div class="image-overlay-container">
             <i class="zmdi zmdi-collection-plus zmdi-hc-5x pull-right" ng-click="go('/vera-photoshoot')" tabindex=0 ng-keydown="($event.which === 13) && go('/vera-photoshoot')"></i>
+          </div>
+          <img ng-click="go('/vera-photoshoot')" class="responsive-img z-depth-2 shoot-main-img" src="dist/images/photographer/photos/Shoots/Vera/DSC_2016.png"
+            alt="Vera" />
         </div>
-    		<img ng-click="go('/vera-photoshoot')" class="responsive-img z-depth-2 shoot-main-img" src="dist/images/photographer/photos/Shoots/Vera/DSC_2016.png" alt="Vera"/>
-        </div>
-    	</div>
+      </div>
     </div>
   </div>
 </div>

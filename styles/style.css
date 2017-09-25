@@ -68,7 +68,7 @@ header a {
 }
 
 header a:hover {
-  background:  #26a69a;
+  background: #26a69a;
   color: white;
 }
 
@@ -79,17 +79,18 @@ header a:hover {
   background: #e4e5e7;
 }
 
+
 /*
   Switch styles
 */
 
 .switch {
-	margin: 1em;
-	text-align: center;
+  margin: 1em;
+  text-align: center;
 }
 
 .switch label {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 @media all and (min-width: 768px) {
@@ -105,8 +106,8 @@ header a:hover {
 }
 
 .switch label .lever {
-	background-color: #84c7c1;
-	width: 55px;
+  background-color: #84c7c1;
+  width: 55px;
 }
 
 @media all and (max-width: 320px) {
@@ -116,24 +117,26 @@ header a:hover {
 }
 
 .switch label .lever::after {
-	background-color: #26a69a;
+  background-color: #26a69a;
 }
 
-.switch label input[type="checkbox"]:checked + .lever::after {
-	left: 37px;
+.switch label input[type="checkbox"]:checked+.lever::after {
+  left: 37px;
 }
 
-.switch label .lever:hover { 
-  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+.switch label .lever:hover {
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
 }
+
 
 /*
   Card styles
 */
 
-
 @media all and (max-width: 768px) {
-  .card.large .card-image, .card.medium .card-image, .card.small .card-image {
+  .card.large .card-image,
+  .card.medium .card-image,
+  .card.small .card-image {
     max-height: 57%;
   }
 }
@@ -147,8 +150,10 @@ header a:hover {
 .more-info-link {
   cursor: pointer;
 }
- 
+
+
 /* http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+
 .card-reveal a {
   position: relative;
   color: #ffab40;
@@ -180,7 +185,6 @@ header a:hover {
   .card-reveal a {
     border-bottom: solid 2px;
   }
-
   .card-reveal a:hover:before {
     visibility: hidden;
   }
@@ -228,6 +232,7 @@ header a:hover {
 .container p {
   margin-bottom: 3em;
 }
+
 
 /*
   Development-Process styles
@@ -280,7 +285,6 @@ header a:hover {
   .blog-container a {
     border-bottom: solid 2px;
   }
-
   .blog-container a:hover:before {
     visibility: hidden;
   }
@@ -290,11 +294,12 @@ header a:hover {
   opacity: 0.7;
 }
 
-.responsive-img-text > p {
+.responsive-img-text>p {
   text-align: center;
   opacity: 0.6;
   font-size: 0.9em;
 }
+
 
 /*
   Image styles
@@ -305,7 +310,7 @@ header a:hover {
   opacity: 0.9;
 }
 
-.talk-div > p {
+.talk-div>p {
   text-align: center;
   opacity: 0.6;
   font-size: 0.9em;
@@ -368,6 +373,7 @@ header a:hover {
   line-height: 20px;
 }
 
+
 /*
   Contact FAB Button Styles
 */
@@ -400,6 +406,7 @@ header a:hover {
   }
 }
 
+
 /*
   Accessibility
 */
@@ -411,9 +418,10 @@ header a:hover {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
 
 /*
   Animate.css entries
@@ -430,7 +438,6 @@ header a:hover {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -440,7 +447,6 @@ header a:hover {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }

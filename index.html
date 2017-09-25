@@ -1,88 +1,93 @@
 <!DOCTYPE html>
-<html lang = "en" ng-app = "folioApp">
-	<head>
-		<meta charset="utf-8">
+<html lang="en" ng-app="folioApp">
 
-		<!-- Canonical URL -->
-		<link rel="canonical" href="https://www.jeremycantu.com" />
+<head>
+	<meta charset="utf-8">
 
-		<!-- Favicon, manifest, and theme colors declarations -->
-		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-		<link rel="manifest" href="manifest.json">
-		<meta name="theme-color" content="#26a69a">
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.jeremycantu.com" />
 
-		<!--Import Material Design Iconic Font-->
-		<!-- http://zavoloklom.github.io/material-design-iconic-font/ -->
-  	<link type="text/css" rel="stylesheet" href="dist/stylesUncss/material-design-iconic-font.css">
+	<!-- Favicon, manifest, and theme colors declarations -->
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#26a69a">
 
-  	<!--Import materialize.css-->
-  	<link type="text/css" rel="stylesheet" href="dist/styles/materialize.min.css"  media="screen"/>
-  	<link type="text/css" rel="stylesheet" href="dist/styles/style.css">
+	<!--Import Material Design Iconic Font-->
+	<!-- http://zavoloklom.github.io/material-design-iconic-font/ -->
+	<link type="text/css" rel="stylesheet" href="dist/stylesUncss/material-design-iconic-font.css">
 
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="dist/styles/materialize.min.css" media="screen" />
+	<link type="text/css" rel="stylesheet" href="dist/styles/style.css">
 
-		<!-- Facebook OpenGraph meta props -->
-		<meta property="og:type" content="website" />
-  	<meta property="og:image" content="https://jac21.github.io/Folio/images/developer/og-developer-header.jpeg" />
-		<meta property="og:description" content="Jeremy A. Cantu's development and photography portfolio site" />
-		<meta property="og:url" content="https://www.jeremycantu.com" />
-		<meta property="og:title" content="Portfolio of Jeremy A. Cantu" />
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Apple touch device props and icons -->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="#26a69a">	
-		<link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="assets/icons/android-icon-192x192.png">
-		<meta name="msapplication-TileColor" content="#26a69a">
-		<meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
+	<!-- Facebook OpenGraph meta props -->
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://jac21.github.io/Folio/images/developer/og-developer-header.jpeg" />
+	<meta property="og:description" content="Jeremy A. Cantu's development and photography portfolio site" />
+	<meta property="og:url" content="https://www.jeremycantu.com" />
+	<meta property="og:title" content="Portfolio of Jeremy A. Cantu" />
 
-		<title>Portfolio of Jeremy A. Cantu</title>
-	</head>
-	<body ng-cloak>
+	<!-- Apple touch device props and icons -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#26a69a">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-icon-192x192.png">
+	<meta name="msapplication-TileColor" content="#26a69a">
+	<meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
 
-		<script>
-			if ('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-				  // Registration was successful
-				  console.log('ServiceWorker registration successful with scope: ', registration.scope);
-				}).catch(function(err) {
-				  // registration failed :(
-				  console.log('ServiceWorker registration failed: ', err);
-				});
-			}
-		</script>
+	<title>Portfolio of Jeremy A. Cantu</title>
+</head>
 
-		<div class = "page {{pageClass}}" ui-view autoscroll="true">
-			<noscript>
-		      <h4 style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica; text-align: center;">
-		        Sorry, JavaScript needs to be enabled in order to run this website (Alternatively, you can visit my more static site at <a target="_blank" rel="noopener noreferrer" href="http://jac21.github.io/">http://jac21.github.io/</a>).
-		      </h4>
-		    </noscript>
-		</div>
+<body ng-cloak>
 
-		<!-- Import Angular libs -->
-		<script type="text/javascript" src="scripts/lib/angular.min.js"></script>
-		<script type="text/javascript" src="scripts/lib/angular-ui-router.min.js"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+				// Registration was successful
+				console.log('ServiceWorker registration successful with scope: ', registration.scope);
+			}).catch(function (err) {
+				// registration failed :(
+				console.log('ServiceWorker registration failed: ', err);
+			});
+		}
+	</script>
 
-		<!-- Import actual code -->
-		<script type="text/javascript" src="scripts/app.js"></script>
-		<script type="text/javascript" src="dist/scripts/controllerBundle.min.js"></script>
-		<script type="text/javascript" src="scripts/directives/responsiveImage.js"></script>
+	<div class="page {{pageClass}}" ui-view autoscroll="true">
+		<noscript>
+			<h4 style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica; text-align: center;">
+				Sorry, JavaScript needs to be enabled in order to run this website (Alternatively, you can visit my more static site at
+				<a
+				    target="_blank" rel="noopener noreferrer" href="http://jac21.github.io/">http://jac21.github.io/</a>).
+			</h4>
+		</noscript>
+	</div>
 
-		<!--Import jQuery and materialize.js-->
-    <script type="text/javascript" src="scripts/lib/jquery-2.1.1.min.js" defer></script>
-    <script type="text/javascript" src="scripts/lib/materialize.min.js" defer></script>
+	<!-- Import Angular libs -->
+	<script type="text/javascript" src="scripts/lib/angular.min.js"></script>
+	<script type="text/javascript" src="scripts/lib/angular-ui-router.min.js"></script>
 
-    <!-- Import Google Analytics -->
-    <script type="text/javascript" src="scripts/analytics.js" defer></script>
-	</body>
+	<!-- Import actual code -->
+	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="dist/scripts/controllerBundle.min.js"></script>
+	<script type="text/javascript" src="scripts/directives/responsiveImage.js"></script>
+
+	<!--Import jQuery and materialize.js-->
+	<script type="text/javascript" src="scripts/lib/jquery-2.1.1.min.js" defer></script>
+	<script type="text/javascript" src="scripts/lib/materialize.min.js" defer></script>
+
+	<!-- Import Google Analytics -->
+	<script type="text/javascript" src="scripts/analytics.js" defer></script>
+</body>
+
 </html>

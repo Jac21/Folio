@@ -38,68 +38,68 @@ var destConfig = {
 }
 
 // browser-sync task
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function () {
 	browserSync.init({
-        files: [config.paths.files],
-        browser: config.browser,
-        port: config.port,
-        server: {
-        	baseDir: './',
-        	middleware: [ historyApiFallback() ]
-        }
+		files: [config.paths.files],
+		browser: config.browser,
+		port: config.port,
+		server: {
+			baseDir: './',
+			middleware: [historyApiFallback()]
+		}
 	});
 });
 
 // image task
-gulp.task('images', function() {
+gulp.task('images', function () {
 	return gulp.src(config.paths.images)
-	.pipe(imagemin({progressive : true}))
-	.pipe(gulp.dest(destConfig.paths.images));
+		.pipe(imagemin({ progressive: true }))
+		.pipe(gulp.dest(destConfig.paths.images));
 });
 
 // scripts task
-gulp.task('scripts', ['controller-scripts'], function() {
-  return gulp.src(config.paths.javascript)
-    .pipe(concat('bundle.js'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest(destConfig.paths.javascript))
+gulp.task('scripts', ['controller-scripts'], function () {
+	return gulp.src(config.paths.javascript)
+		.pipe(concat('bundle.js'))
+		.pipe(rename({ suffix: '.min' }))
+		.pipe(gulp.dest(destConfig.paths.javascript))
 });
 
 // scripts task
-gulp.task('controller-scripts', function() {
-  return gulp.src(config.paths.angularControllersJs)
-    .pipe(sourcemaps.init())
-    .pipe(concat('controllerBundle.js'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(destConfig.paths.javascript))
+gulp.task('controller-scripts', function () {
+	return gulp.src(config.paths.angularControllersJs)
+		.pipe(sourcemaps.init())
+		.pipe(concat('controllerBundle.js'))
+		.pipe(rename({ suffix: '.min' }))
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest(destConfig.paths.javascript))
 });
 
 // linting task
-gulp.task('lint', function() {
+gulp.task('lint', function () {
 	return gulp.src(config.paths.javascript)
-		.pipe(lint({config: 'eslint.config.json'}))
+		.pipe(lint({ config: 'eslint.config.json' }))
 		.pipe(lint.format());
 });
 
 //uncss-ing task
 gulp.task('uncss', function () {
-    return gulp.src(config.paths.styles)
-        .pipe(uncss({
-            html: ['index.html', 'templates/**/*.html']
-        }))
-        .pipe(gulp.dest(destConfig.paths.stylesUncss));
+	return gulp.src(config.paths.styles)
+		.pipe(uncss({
+			html: ['index.html', 'templates/**/*.html']
+		}))
+		.pipe(gulp.dest(destConfig.paths.stylesUncss));
 });
 
 // crass, used for CSS minification
-gulp.task('crass', function() {
-  return gulp.src(config.paths.styles)
-        .pipe(crass({pretty:false}))
-        .pipe(gulp.dest(destConfig.paths.styles));
+gulp.task('crass', function () {
+	return gulp.src(config.paths.styles)
+		.pipe(crass({ pretty: false }))
+		.pipe(gulp.dest(destConfig.paths.styles));
 });
 
 // watch task for any html/js changes
-gulp.task('watch', function() {
+gulp.task('watch', function () {
 	gulp.watch(config.paths.js, ['lint']);
 	gulp.watch(config.paths.angularControllersJs, ['lint']);
 	gulp.watch(config.paths.javascript, ['scripts']);
@@ -109,4 +109,4 @@ gulp.task('watch', function() {
 });
 
 // default gulp tasks
-gulp.task('default', ['browser-sync', 'watch'], function () {});
+gulp.task('default', ['browser-sync', 'watch'], function () { });

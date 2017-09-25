@@ -1,10 +1,10 @@
-(function() {
+(function () {
 	"use strict";
 
 	angular // eslint-disable-line no-undef
 		.module("folioApp")
 		.controller("DeveloperController", ["$scope", "$location", "$anchorScroll",
-			function($scope, $location, $anchorScroll) {
+			function ($scope, $location, $anchorScroll) {
 				// initialize materialbox
 				$(".materialboxed").materialbox(); // eslint-disable-line no-undef
 
@@ -34,13 +34,13 @@
 				};
 
 				// utility function to add active css class to target element
-				$scope.activate = function(event) {
+				$scope.activate = function (event) {
 					$(event.target).addClass("active"); // eslint-disable-line no-undef
 				};
 
 				// utility function to set viewport to the top of the page
 				// on element click
-				$scope.backToTop = function() {
+				$scope.backToTop = function () {
 					$anchorScroll();
 				};
 			}
