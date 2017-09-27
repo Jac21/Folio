@@ -1,7 +1,7 @@
 // wrap in an IIFE to remove variables from global scope
 (function () {
 	"use strict";
-
+	
 	angular.module("folioApp", ["ui.router", "responsive-images"]) // eslint-disable-line no-undef
 		.config(function ($stateProvider, $urlRouterProvider, $compileProvider, $locationProvider) {
 
