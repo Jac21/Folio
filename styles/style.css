@@ -153,7 +153,6 @@ header a:hover {
 
 
 /* http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
-
 .card-reveal a {
   position: relative;
   color: #ffab40;
@@ -170,14 +169,20 @@ header a:hover {
   background-color: #ffab40;
   visibility: hidden;
   -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -o-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .card-reveal a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -270,14 +275,20 @@ header a:hover {
   background-color: #ffab40;
   visibility: hidden;
   -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -o-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .blog-container a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
   transform: scaleX(1);
 }
 
