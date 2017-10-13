@@ -172,10 +172,10 @@ header a:hover {
   -moz-transform: scaleX(0);
   -o-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0.01s;
+  -moz-transition: all 0.3s ease-in-out 0.01s;
+  -o-transition: all 0.3s ease-in-out 0.01s;
+  transition: all 0.3s ease-in-out 0.01s;
 }
 
 .card-reveal a:hover:before {
