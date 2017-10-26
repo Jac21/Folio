@@ -37,7 +37,7 @@
 					},
 					{
 						"caption": "Taken at Castillo San Cristóbal in San Juan, Puerto Rico",
-						"url": "dist/images/photographer/photos/DSC_1201.JPG",
+						"url": "dist/images/photographer/photos/DSC_1201.jpg",
 						"alt": "Pier in San Juan, Puerto Rico"
 					},
 					{
@@ -47,7 +47,7 @@
 					},
 					{
 						"caption": "Taken at the Mohawk in Austin, Texas (Band: Anamanaguchi)",
-						"url": "dist/images/photographer/photos/DSC_0631.JPG",
+						"url": "dist/images/photographer/photos/DSC_0631.jpg",
 						"alt": "Anamanaguchi at the Mohawk in Austin, Texas"
 					}
 				];
