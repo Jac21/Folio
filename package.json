@@ -4,6 +4,7 @@
   "description": "Portfolio site",
   "main": "gulpfile.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
     "precache": "sw-precache --verbose --config=sw-precache-config.js"
   },
@@ -25,7 +26,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-crass": "^0.2.0",
     "gulp-eslint": "^4.0.0",
-    "gulp-imagemin": "^2.4.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uncss": "^1.0.6",
