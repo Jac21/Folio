@@ -15,7 +15,7 @@
 				};
 
 				$scope.ghostButtonLink = {
-					"url": "https://jac21.github.io/PhotoGraphy/"
+					"url": "https://jcantuphotography.com/"
 				};
 
 				// image data array
