@@ -21,14 +21,14 @@
 				// image data array
 				$scope.images = [
 					{
-						"caption": "Taken at the Hope Outdoor Gallery in Austin, Texas",
-						"url": "dist/images/photographer/photos/DSC_0063.JPG",
-						"alt": "Graffiti Park in Austin, Texas"
+						"caption": "Taken at Avila in Spain",
+						"url": "dist/images/photographer/photos/DSC_4705.JPG",
+						"alt": "Avila in Spain"
 					},
 					{
-						"caption": "Taken at the Hamilton Pool Preserve near Dripping Springs, Texas",
-						"url": "dist/images/photographer/photos/DSC_0358.JPG",
-						"alt": "Hamilton Pool Waterfall near Dripping Springs, Texas"
+						"caption": "Taken in Martindale, Texas",
+						"url": "dist/images/photographer/photos/DSC_4110.JPG",
+						"alt": "Martindale, Texas"
 					},
 					{
 						"caption": "Taken at the Buen Retiro Park in Madrid, Spain",
@@ -42,8 +42,8 @@
 					},
 					{
 						"caption": "Taken at the Hamilton Pool Preserve near Dripping Springs, Texas",
-						"url": "dist/images/photographer/photos/DSC_0453.JPG",
-						"alt": "Hamilton Pool Butterfly near Dripping Springs, Texas"
+						"url": "dist/images/photographer/photos/DSC_0358.JPG",
+						"alt": "Hamilton Pool Waterfall near Dripping Springs, Texas"
 					},
 					{
 						"caption": "Taken at the Mohawk in Austin, Texas (Band: Anamanaguchi)",
