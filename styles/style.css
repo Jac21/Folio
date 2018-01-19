@@ -39,6 +39,11 @@ body {
   border: 1px solid white;
 }
 
+.headshot-dev:hover {
+  border-color: #999;
+  border: 1px dashed #fff;
+}
+
 .headshot-photo {
   display: inline-block;
   height: 150px;
@@ -46,6 +51,41 @@ body {
   width: 220px;
   border-radius: 50px;
   border: 1px solid white;
+}
+
+.headshot-photo:hover {
+  border-color: #999;
+  border: 1px dashed #fff;
+}
+
+header .avatar {
+  position: relative;
+}
+
+header .avatar:hover:before {
+  content: '🌟';
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  font-size: 20px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+header .photographer-avatar {
+  position: relative;
+}
+
+header .photographer-avatar:hover:before {
+  content: '📷';
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  font-size: 20px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 header h1 {
