@@ -60,7 +60,7 @@ header h2 {
   font-weight: 150;
 }
 
-header a {
+header .ghost-button {
   border: 1px solid #26a69a;
   border-radius: 290486px;
   color: white;
@@ -73,7 +73,7 @@ header a {
   transition-property: color, background;
 }
 
-header a:hover {
+header .ghost-button:hover {
   background: #26a69a;
   color: white;
 }

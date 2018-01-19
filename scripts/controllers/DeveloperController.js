@@ -18,11 +18,11 @@
 
 				// page specific objects
 				$scope.developerHeadshot = {
-					"url": "dist/images/developer/headshot-dev.png",
+					"url": "https://avatars3.githubusercontent.com/u/1449455?s=460&v=4",
 					"alt": "developer headshot"
 				};
 
-				$scope.ghostButtonLink = {
+				$scope.softwareHeaderLink = {
 					"url": "https://www.github.com/Jac21"
 				};
 

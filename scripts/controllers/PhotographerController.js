@@ -14,8 +14,8 @@
 					"alt": "photographer headshot"
 				};
 
-				$scope.ghostButtonLink = {
-					"url": "https://jcantuphotography.com/"
+				$scope.photographerHeaderLink = {
+					"url": "https://www.jcantuphotography.com/"
 				};
 
 				// image data array
