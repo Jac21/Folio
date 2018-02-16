@@ -138,13 +138,13 @@ header .ghost-button:hover {
   font-size: 18px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 48em) {
   .switch label {
     font-size: 22px;
   }
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 20em) {
   .switch label {
     font-size: 14px;
   }
@@ -155,7 +155,7 @@ header .ghost-button:hover {
   width: 55px;
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 20em) {
   .switch label .lever {
     width: 50px;
   }
@@ -177,7 +177,7 @@ header .ghost-button:hover {
   Card styles
 */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 48em) {
   .card.large .card-image,
   .card.medium .card-image,
   .card.small .card-image {
@@ -185,7 +185,7 @@ header .ghost-button:hover {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 48em) {
   .card-link {
     margin-bottom: 1em !important;
   }
@@ -230,7 +230,7 @@ header .ghost-button:hover {
   transform: scaleX(1);
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 48em) {
   .card-reveal a {
     border-bottom: solid 2px;
   }
@@ -290,7 +290,7 @@ header .ghost-button:hover {
   width: 70%;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 48em) {
   .blog-container {
     width: 80%;
   }
@@ -302,7 +302,7 @@ header .ghost-button:hover {
   line-height: 28px;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 48em) {
   .blog-container p {
     font-size: 16px;
   }
@@ -341,7 +341,7 @@ header .ghost-button:hover {
   transform: scaleX(1);
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 48em) {
   .blog-container a {
     border-bottom: solid 2px;
   }
@@ -379,7 +379,7 @@ header .ghost-button:hover {
   margin-bottom: 1em;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 37.5em) {
   .responsive-img {
     margin-bottom: 2em;
   }
@@ -416,13 +416,13 @@ header .ghost-button:hover {
   color: #9E4396;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 23.5em) {
   .image-overlay-container i {
     font-size: 3em;
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 23.5em) {
   .materialbox-caption {
     margin-bottom: 50px;
   }
@@ -444,20 +444,20 @@ header .ghost-button:hover {
   background-color: #26a69a;
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 23.5em) {
   .btn-floating.btn-large {
     width: 50px;
     height: 50px;
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 23.5em) {
   .btn-floating.btn-large i {
     line-height: 50px;
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 23.5em) {
   .fixed-action-btn.horizontal ul {
     right: 47px;
     top: 40%;
