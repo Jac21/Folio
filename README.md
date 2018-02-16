@@ -1,4 +1,7 @@
 # Folio
+
+[![CircleCI](https://circleci.com/gh/Jac21/Folio/tree/master.svg?style=shield)](https://circleci.com/gh/Jac21/Folio/tree/master)
+
 Live site: 
 >- https://www.jeremycantu.com
 
