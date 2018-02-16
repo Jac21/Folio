@@ -125,7 +125,6 @@ header .ghost-button:hover {
   background: #e4e5e7;
 }
 
-
 /*
   Switch styles
 */
@@ -174,7 +173,6 @@ header .ghost-button:hover {
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
-
 /*
   Card styles
 */
@@ -197,8 +195,8 @@ header .ghost-button:hover {
   cursor: pointer;
 }
 
-
 /* http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+
 .card-reveal a {
   position: relative;
   color: #ffab40;
@@ -284,18 +282,17 @@ header .ghost-button:hover {
   margin-bottom: 3em;
 }
 
-
 /*
   Development-Process styles
 */
 
 .blog-container {
-  width: 73%;
+  width: 70%;
 }
 
 @media all and (max-width: 768px) {
   .blog-container {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -303,6 +300,12 @@ header .ghost-button:hover {
   padding: 2em 0em;
   font-size: 17px;
   line-height: 28px;
+}
+
+@media all and (max-width: 768px) {
+  .blog-container p {
+    font-size: 16px;
+  }
 }
 
 .blog-container a {
@@ -356,7 +359,6 @@ header .ghost-button:hover {
   opacity: 0.6;
   font-size: 0.9em;
 }
-
 
 /*
   Image styles
@@ -430,7 +432,6 @@ header .ghost-button:hover {
   line-height: 20px;
 }
 
-
 /*
   Contact FAB Button Styles
 */
@@ -463,7 +464,6 @@ header .ghost-button:hover {
   }
 }
 
-
 /*
   Accessibility
 */
@@ -478,7 +478,6 @@ header .ghost-button:hover {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-
 
 /*
   Animate.css entries
