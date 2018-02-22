@@ -5,11 +5,12 @@
 	</div>
 	<hr>
 
-	<p>In addition to the functional aspects <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> 
-		provides, one which I enjoy the most is the affordance of being able to track a myriad of projects which entail
-		a large variety of new technologies and tools. Building up a project in tandem with learning a toolset is personally extremely
-		important to how I learn and grow as a developer. However, this can quickly get out of hand as the scope of those projects 
-		increases over time.</p>
+	<p>In addition to the functional aspects
+		<a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+		provides, one which I enjoy the most is the affordance of being able to track a myriad of projects which entail a large variety
+		of new technologies and tools. Building up a project in tandem with learning a toolset is personally extremely important
+		to how I learn and grow as a developer. However, this can quickly get out of hand as the scope of those projects increases
+		over time.</p>
 
 	<div class="responsive-img-text">
 		<img class="materialboxed responsive-img" data-caption="GitHub at a glance" src="dist/images/developer/reponotes/github-at-a-glance.png"
@@ -17,10 +18,12 @@
 		<p>GitHub at a glance</p>
 	</div>
 
-	<p>A straightforward approach I use personally is to simply jot down notes and reminders for each project I'm working on at that time.
-		This is mainly relegated to small pieces of information that help guide me back on track after a certain period of time has passed since I last worked
-		on said project, or "TODO" lists to flesh out certain portions of the application I'm building. Besides much more analog methods of keeping track, 
-		I failed to find an online tool that assisted in this specific, GitHub-centric use-case. Thus, <a href="https://reponotes.com/" target="_blank" rel="noopener noreferrer">RepoNotes</a>:</p>
+	<p>A straightforward approach I use personally is to simply jot down notes and reminders for each project I'm working on at
+		that time. This is mainly relegated to small pieces of information that help guide me back on track after a certain period
+		of time has passed since I last worked on said project, or "TODO" lists to flesh out certain portions of the application
+		I'm building. Besides much more analog methods of keeping track, I failed to find an online tool that assisted in this
+		specific, GitHub-centric use-case. Thus,
+		<a href="https://reponotes.com/" target="_blank" rel="noopener noreferrer">RepoNotes</a>:</p>
 
 	<div class="responsive-img-text">
 		<img class="materialboxed responsive-img" data-caption="RepoNotes" src="dist/images/developer/reponotes/reponotes.png" alt="RepoNotes"
@@ -28,13 +31,17 @@
 		<p>RepoNotes at a glance</p>
 	</div>
 
-	<p>The intent was to have a persistent page that would allow me to have a few ideas about a particular repository
-		saved until that idea's implementation/discarding. Usage itself is meant to accomplish just that: the user enters their
-		GitHub username in the singular form field on the main page, and submits. Using the native <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank" rel="noopener noreferrer">
-		Fetch API</a>, that submittal is treated as a request to the <a href="https://developer.github.com/v3/users/" target="_blank" rel="noopener noreferrer">GitHub Users API</a>. 
-		A JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
-		 target="_blank" rel="noopener noreferrer">Promise</a> is then resolved to return that user's GitHub repositories, which
-		are then displayed in a simple list format, each with their own identifying label, text area, and save button.</p>
+	<p>The intent was to have a persistent page that would allow me to have a few ideas about a particular repository saved until
+		that idea's implementation/discarding. Usage itself is meant to accomplish just that: the user enters their GitHub username
+		in the singular form field on the main page, and submits. Using the native
+		<a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+		 target="_blank" rel="noopener noreferrer">
+			Fetch API</a>, that submittal is treated as a request to the
+		<a href="https://developer.github.com/v3/users/" target="_blank"
+		 rel="noopener noreferrer">GitHub Users API</a>. A JavaScript
+		<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+		 target="_blank" rel="noopener noreferrer">Promise</a> is then resolved to return that user's GitHub repositories, which are then displayed in a simple list format,
+		each with their own identifying label, text area, and save button.</p>
 
 	<div class="responsive-img-text">
 		<img class="materialboxed responsive-img" data-caption="RepoNotes example usage" src="dist/images/developer/reponotes/reponotes-example.png"
@@ -43,17 +50,20 @@
 	</div>
 
 	<p>At this point, the user can then enter text in the particular repository of choice, and save that note. This is accomplished
-		using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener noreferrer">localStorage API</a>, 
-		saving that note data to the user's browser storage for long-term persistence. This can be done for each of their
-		repositories, and edited and modified as seen fit, leading to a simple and straightforward tracking of any "TODOs" or
-		pending ideas to be fleshed out. An additional feature allows the user to also export the current state of notes to a text file for any safe-keeping
-		and tracking outside of the web application.</p>
+		using the
+		<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener noreferrer">localStorage API</a>, saving that note data to the user's browser storage for long-term persistence. This can be done for
+		each of their repositories, and edited and modified as seen fit, leading to a simple and straightforward tracking of any
+		"TODOs" or pending ideas to be fleshed out. An additional feature allows the user to also export the current state of notes
+		to a text file for any safe-keeping and tracking outside of the web application.</p>
 
 	<p>Another technology utilized in the vein of increasing usability akin to modern "Progressive Web Apps" are Service Workers
 		for caching the needed assets to enable offline use. In the event of the user going offline partway through usage, or accessing
 		the site when not on a stable connection, the instantiated service worker loads the cached scripting and styles so as to
-		provide a seamless user experience. This is acheived by integrating Google's <a href="https://github.com/GoogleChromeLabs/sw-precache" target="_blank" rel="noopener noreferrer">sw-precache</a> library
-		into the Webpack-based build process <a href="https://github.com/Jac21/reponotesreact/blob/master/package.json#L47" target="_blank" rel="noopener noreferrer">as such</a>.</p>
+		provide a seamless user experience. This is acheived by integrating Google's
+		<a href="https://github.com/GoogleChromeLabs/sw-precache"
+		 target="_blank" rel="noopener noreferrer">sw-precache</a> library into the Webpack-based build process
+		<a href="https://github.com/Jac21/reponotesreact/blob/master/package.json#L47"
+		 target="_blank" rel="noopener noreferrer">as such</a>.</p>
 
 	<div class="responsive-img-text">
 		<img class="materialboxed responsive-img" data-caption="Offline example usage - Service Worker instantiated on the right-hand side"
@@ -62,11 +72,9 @@
 		<p>Offline example usage - Service Worker instantiated on the right-hand side</p>
 	</div>
 
-	<p>The backbone of this web-application was built using the 
-		<a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="noopener noreferrer">Create-React-App</a> NPM package 
-		for scaffolding (later ejected to take advantage of some external tools), as well as the 
-		<a href="http://turretcss.com" target="_blank" rel="noopener noreferrer">turretcss</a> styling framework, two tools I'd be more than willing to recommend after their usage in
-		creating RepoNotes.
+	<p>The backbone of this web-application was built using the
+		<a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="noopener noreferrer">Create-React-App</a> NPM package for scaffolding (later ejected to take advantage of some external tools), as well as the
+		<a href="http://turretcss.com" target="_blank" rel="noopener noreferrer">turretcss</a> styling framework, two tools I'd be more than willing to recommend after their usage in creating RepoNotes.
 	</p>
 
 	<div class="page-nav-options">
