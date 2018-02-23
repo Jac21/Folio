@@ -28,7 +28,7 @@
 
         $scope.fabButtonLinks = {
           email:
-            "mailto:mail@jeremycantu.com?subject=Jeremy Cantu's Portfolio Enquiry&body=Let's talk!",
+            "mailto:mail@jeremycantu.com?subject=Jeremy Cantu's Portfolio Inquiry&body=Let's talk!",
           file: "https://jac21.github.io",
           github: "https://www.github.com/Jac21",
           linkedin: "https://www.linkedin.com/in/jeremycantu"
