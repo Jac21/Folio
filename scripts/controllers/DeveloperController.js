@@ -1,6 +1,6 @@
 (function() {
   "use strict";
-
+  
   angular // eslint-disable-line no-undef
     .module("folioApp")
     .controller("DeveloperController", [

@@ -4,11 +4,11 @@ var gulp = require("gulp"); // gulping!
 var browserSync = require("browser-sync"); // sync browser with code changes!
 var lint = require("gulp-eslint"); // lint JS files!
 var imagemin = require("gulp-imagemin"); // optimizing images!
-var rename = require("gulp-rename"); // optimizing js
+var rename = require("gulp-rename"); // renaming JS!
 var sourcemaps = require("gulp-sourcemaps"); // sourcemapping!
 var uncss = require("gulp-uncss"); // shedding CSS!
-var crass = require("gulp-crass"); // minifying CSS!
-var concat = require("gulp-concat"); // concat helper
+var crass = require("gulp-crass"); // optimizing CSS!
+var concat = require("gulp-concat"); // concat helper!
 var historyApiFallback = require("connect-history-api-fallback"); // local development helper!
 
 // configuration object
@@ -19,10 +19,17 @@ var config = {
   paths: {
     files: "**/*.*",
     images: "images/**/*.*",
-    javascript: "scripts/*.js",
-    styles: "styles/*.css",
-    angularControllersJs: "scripts/controllers/*.js",
-    libJavascript: "scripts/lib/*.js"
+    applicationJavascript: [
+      "scripts/app.js",
+      "scripts/controllers/*.js",
+      "scripts/directives/responsiveImage.js"
+    ],
+    libJavascript: [
+      "scripts/lib/angular.min.js",
+      "scripts/lib/angular-ui-router.min.js",
+      "scripts/lib/materialize.min.js"
+    ],
+    styles: "styles/*.css"
   }
 };
 
@@ -58,30 +65,30 @@ gulp.task("images", function() {
     .pipe(gulp.dest(destConfig.paths.images));
 });
 
-// scripts task
-gulp.task("scripts", ["controller-scripts"], function() {
+// Scripts task
+gulp.task("scripts", ["lib-scripts"], function() {
   return gulp
-    .src(config.paths.javascript)
-    .pipe(concat("bundle.js"))
-    .pipe(rename({ suffix: ".min" }))
-    .pipe(gulp.dest(destConfig.paths.javascript));
-});
-
-// AngularJS Controller scripts task
-gulp.task("controller-scripts", function() {
-  return gulp
-    .src(config.paths.angularControllersJs)
+    .src(config.paths.applicationJavascript)
     .pipe(sourcemaps.init())
-    .pipe(concat("controllerBundle.js"))
+    .pipe(concat("bundle.js"))
     .pipe(rename({ suffix: ".min" }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(destConfig.paths.javascript));
 });
 
+// Library scripts task
+gulp.task("lib-scripts", function() {
+  return gulp
+    .src(config.paths.libJavascript)
+    .pipe(concat("lib-bundle.js"))
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest(destConfig.paths.libJavascript));
+});
+
 // linting task
 gulp.task("lint", function() {
   return gulp
-    .src(config.paths.javascript)
+    .src(config.paths.applicationJavascript)
     .pipe(lint({ config: "eslint.config.json" }))
     .pipe(lint.format());
 });
@@ -108,10 +115,9 @@ gulp.task("crass", function() {
 
 // watch task for any html/js changes
 gulp.task("watch", function() {
-  gulp.watch(config.paths.js, ["lint"]);
-  gulp.watch(config.paths.angularControllersJs, ["lint"]);
-  gulp.watch(config.paths.javascript, ["scripts"]);
-  gulp.watch(config.paths.angularControllersJs, ["controller-scripts"]);
+  gulp.watch(config.paths.applicationJavascript, ["lint"]);
+  gulp.watch(config.paths.applicationJavascript, ["scripts"]);
+  gulp.watch(config.paths.libJavascript, ["lib-scripts"]);
   gulp.watch(config.paths.images, ["images"]);
   gulp.watch(config.paths.styles, ["crass"]);
 });
