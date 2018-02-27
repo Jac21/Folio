@@ -13,7 +13,7 @@
         if (scope.$last === true) {
           $timeout(function() {
             // initialize materialbox
-            var elem = document.querySelector(".materialboxed");
+            var elem = document.querySelectorAll(".materialboxed");
             var instance = M.Materialbox.init(elem, {
               inDuration: 275,
               outDuration: 200

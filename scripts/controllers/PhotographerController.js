@@ -66,12 +66,6 @@
         $scope.backToTop = function() {
           $anchorScroll();
         };
-
-        var elem = document.querySelector(".materialboxed");
-        var instance = M.Materialbox.init(elem, {
-          inDuration: 275,
-          outDuration: 200
-        });
       }
     ]);
 })();
