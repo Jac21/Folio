@@ -22,7 +22,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "connect-history-api-fallback": "^1.5.0",
-    "eslint": "^4.18.1",
+    "eslint": "^4.18.2",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-crass": "^0.2.0",
