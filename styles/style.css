@@ -408,10 +408,13 @@ header .ghost-button:hover {
   opacity: 0.9;
 }
 
-.talk-div>p {
+.talk-div {
   text-align: center;
+}
+
+.talk-div>p {
   opacity: 0.6;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .responsive-img {
