@@ -75,7 +75,7 @@ body {
   vertical-align: top;
   width: 120px;
   border-radius: 100px;
-  border: 1px solid white;
+  border: 1px solid #fff;
 }
 
 .headshot-dev:hover {
@@ -89,7 +89,7 @@ body {
   vertical-align: top;
   width: 220px;
   border-radius: 50px;
-  border: 1px solid white;
+  border: 1px solid #fff;
 }
 
 .headshot-photo:hover {
@@ -128,13 +128,13 @@ header .photographer-avatar:hover:before {
 }
 
 header h1 {
-  color: white;
+  color: #fff;
   font-size: 2.7em;
   font-weight: 300;
 }
 
 header h2 {
-  color: white;
+  color: #fff;
   font-size: 1.6em;
   font-weight: 150;
 }
@@ -142,7 +142,7 @@ header h2 {
 header .ghost-button {
   border: 1px solid #26a69a;
   border-radius: 290486px;
-  color: white;
+  color: #fff;
   font-size: 0.8em;
   letter-spacing: 0.2em;
   padding: 1em 2em;
@@ -154,7 +154,7 @@ header .ghost-button {
 
 header .ghost-button:hover {
   background: #26a69a;
-  color: white;
+  color: #fff;
 }
 
 .section-divider {
@@ -450,7 +450,7 @@ header .ghost-button:hover {
 
 .image-overlay-container i {
   padding-top: 5px;
-  color: white;
+  color: #fff;
 }
 
 .image-overlay-container i:hover {
