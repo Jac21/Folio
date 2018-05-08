@@ -559,9 +559,3 @@ header .ghost-button:hover {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-
-/* Temporary(?) Materialize local fixes */
-
-.card .card-action {
-  background-color: inherit;
-}
