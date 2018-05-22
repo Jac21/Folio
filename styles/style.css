@@ -341,9 +341,20 @@ header .ghost-button:hover {
 }
 
 .blog-container p {
-  padding: 2em 0em;
-  font-size: 17px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 2em 0;
+  letter-spacing: .1px;
+  font-weight: 400;
+}
+
+.blog-container h3 {
+  position: relative;
+  line-height: 38px;
+  margin-top: 6px;
+  margin-bottom: 12px;
 }
 
 @media all and (max-width: 48em) {
