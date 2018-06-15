@@ -209,7 +209,7 @@ header .ghost-button:hover {
 }
 
 .switch label .lever:hover {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
 .switch label input[type=checkbox]:checked+.lever:after,
