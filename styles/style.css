@@ -71,11 +71,18 @@ body {
 
 .headshot-dev {
   display: inline-block;
-  height: 120px;
+  height: 100pt;
   vertical-align: top;
-  width: 120px;
+  width: 100pt;
   border-radius: 100px;
   border: 1px solid #fff;
+}
+
+@media all and (min-width: 48em) {
+  .headshot-dev {
+    height: 110pt;
+    width: 110pt;
+  }
 }
 
 .headshot-dev:hover {
