@@ -232,7 +232,7 @@ header .ghost-button:hover {
   .card.large .card-image,
   .card.medium .card-image,
   .card.small .card-image {
-    max-height: 57%;
+    max-height: 56%;
   }
 }
 
