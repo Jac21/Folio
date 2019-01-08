@@ -21,9 +21,9 @@
   "homepage": "https://github.com/Jac21/Folio#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "connect-history-api-fallback": "^1.5.0",
+    "connect-history-api-fallback": "^1.6.0",
     "eslint": "^4.19.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-crass": "^0.2.0",
     "gulp-eslint": "^4.0.2",
