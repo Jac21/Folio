@@ -29,13 +29,13 @@
     "gulp-eslint": "^4.0.2",
     "gulp-imagemin": "^4.1.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sourcemaps": "^2.6.4",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uncss": "^1.0.6",
     "sw-precache": "^5.2.1"
   },
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.20",
-    "angular": "^1.7.5",
+    "@uirouter/angularjs": "^1.0.22",
+    "angular": "^1.7.7",
     "materialize-css": "^1.0.0"
   }
 }
