@@ -25,9 +25,9 @@ var config = {
       'scripts/directives/responsiveImage.js'
     ],
     libJavascript: [
-      'scripts/lib/angular.min.js',
-      'scripts/lib/angular-ui-router.min.js',
-      'scripts/lib/materialize.min.js'
+      'node_modules/angular/angular.min.js',
+      'node_modules/@uirouter/angularjs/release/angular-ui-router.min.js',
+      'node_modules/materialize-css/dist/js/materialize.min.js'
     ],
     styles: 'styles/*.css'
   }
