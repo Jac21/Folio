@@ -8,6 +8,16 @@
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<title>Jeremy Cantu | Full-Stack Software Developer</title>
+
+	<!--Import Material Design Iconic Font-->
+	<!-- http://zavoloklom.github.io/material-design-iconic-font/ -->
+	<link type="text/css" rel="stylesheet" href="dist/stylesUncss/material-design-iconic-font.css">
+
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="dist/styles/materialize.min.css" media="screen" />
+	<link type="text/css" rel="stylesheet" href="dist/styles/style.css">
+
 	<!-- Canonical URL -->
 	<link rel="canonical" href="https://www.jeremycantu.com" />
 
@@ -24,19 +34,14 @@
 	<meta name="robots" content="index,follow">
 	<!-- Google Specific -->
 	<meta name="googlebot" content="index,follow">
-
-	<!--Import Material Design Iconic Font-->
-	<!-- http://zavoloklom.github.io/material-design-iconic-font/ -->
-	<link type="text/css" rel="stylesheet" href="dist/stylesUncss/material-design-iconic-font.css">
-
-	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="dist/styles/materialize.min.css" media="screen" />
-	<link type="text/css" rel="stylesheet" href="dist/styles/style.css">
+	<!-- Disable FLoC -->
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
 	<!-- Facebook OpenGraph meta props -->
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="https://jac21.github.io/Folio/images/developer/og-developer-header.jpeg" />
-	<meta property="og:description" content="Jeremy A. Cantu's multidisciplinary development and photography portfolio site" />
+	<meta property="og:description"
+		content="Jeremy A. Cantu's multidisciplinary development and photography portfolio site" />
 	<meta property="og:url" content="https://www.jeremycantu.com" />
 	<meta property="og:title" content="Jeremy Cantu | Full-Stack Software Developer" />
 	<meta property="og:site_name" content="Jeremy Cantu | Full-Stack Software Developer">
@@ -54,10 +59,7 @@
 	<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
 	<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-icon-192x192.png">
-	<meta name="msapplication-TileColor" content="#26a69a">
 	<meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
-
-	<title>Jeremy Cantu | Full-Stack Software Developer</title>
 </head>
 
 <body ng-cloak>
@@ -76,9 +78,12 @@
 
 	<div class="page {{pageClass}}" ui-view autoscroll="true">
 		<noscript>
-			<h4 style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica; text-align: center;">
-				Sorry, JavaScript needs to be enabled in order to run this website (Alternatively, you can visit my more static site at
-				<a target="_blank" rel="noopener noreferrer" href="http://jac21.github.io/">http://jac21.github.io/</a>).
+			<h4
+				style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica; text-align: center;">
+				Sorry, JavaScript needs to be enabled in order to run this website (Alternatively, you can visit my more
+				static site at
+				<a target="_blank" rel="noopener noreferrer"
+					href="http://jac21.github.io/">http://jac21.github.io/</a>).
 			</h4>
 		</noscript>
 	</div>
