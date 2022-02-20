@@ -27,7 +27,7 @@
         };
 
         $scope.fabButtonLinks = {
-          email: "mailto:mail@jeremycantu.com?subject=Jeremy Cantu's Portfolio Inquiry&body=Let's talk!",
+          email: "mailto:mail@jeremycantu.com?subject=Jeremy Cantú's Portfolio Inquiry&body=Let's talk!",
           file: "https://jac21.github.io/public/content/jCantuResume.pdf",
           github: "https://www.github.com/Jac21",
           linkedin: "https://www.linkedin.com/in/jeremycantu"
