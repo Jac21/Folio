@@ -1,116 +1,195 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="folioApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="Description"
+      content="Jeremy Cantú | Full-Stack Software Developer"
+    />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="Description" content="Jeremy Cantú | Full-Stack Software Developer">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeremy Cantú | Full-Stack Software Developer</title>
 
-	<title>Jeremy Cantú | Full-Stack Software Developer</title>
+    <!--Import Material Design Iconic Font-->
+    <!-- http://zavoloklom.github.io/material-design-iconic-font/ -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="dist/stylesUncss/material-design-iconic-font.css"
+    />
 
-	<!--Import Material Design Iconic Font-->
-	<!-- http://zavoloklom.github.io/material-design-iconic-font/ -->
-	<link type="text/css" rel="stylesheet" href="dist/stylesUncss/material-design-iconic-font.css">
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="dist/styles/materialize.min.css"
+      media="screen"
+    />
+    <link type="text/css" rel="stylesheet" href="dist/styles/style.css" />
 
-	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="dist/styles/materialize.min.css" media="screen" />
-	<link type="text/css" rel="stylesheet" href="dist/styles/style.css">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.jeremycantu.com" />
 
-	<!-- Canonical URL -->
-	<link rel="canonical" href="https://www.jeremycantu.com" />
+    <!-- Favicon, manifest, and theme colors declarations -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#26a69a" />
 
-	<!-- Favicon, manifest, and theme colors declarations -->
-	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<link rel="manifest" href="manifest.json">
-	<meta name="theme-color" content="#26a69a">
+    <!-- Name of web application (only should be used if the website is used as an app) -->
+    <meta name="application-name" content="Folio" />
 
-	<!-- Name of web application (only should be used if the website is used as an app) -->
-	<meta name="application-name" content="Folio">
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <!-- All Search Engines -->
+    <meta name="robots" content="index,follow" />
+    <!-- Google Specific -->
+    <meta name="googlebot" content="index,follow" />
+    <!-- Disable FLoC -->
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 
-	<!-- Control the behavior of search engine crawling and indexing -->
-	<!-- All Search Engines -->
-	<meta name="robots" content="index,follow">
-	<!-- Google Specific -->
-	<meta name="googlebot" content="index,follow">
-	<!-- Disable FLoC -->
-	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <!-- Facebook OpenGraph meta props -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://jac21.github.io/Folio/images/developer/og-developer-header.jpeg"
+    />
+    <meta
+      property="og:description"
+      content="Jeremy A. Cantú's multidisciplinary development and photography portfolio site"
+    />
+    <meta property="og:url" content="https://www.jeremycantu.com" />
+    <meta
+      property="og:title"
+      content="Jeremy Cantú | Full-Stack Software Developer"
+    />
+    <meta
+      property="og:site_name"
+      content="Jeremy Cantú | Full-Stack Software Developer"
+    />
 
-	<!-- Facebook OpenGraph meta props -->
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://jac21.github.io/Folio/images/developer/og-developer-header.jpeg" />
-	<meta property="og:description"
-		content="Jeremy A. Cantú's multidisciplinary development and photography portfolio site" />
-	<meta property="og:url" content="https://www.jeremycantu.com" />
-	<meta property="og:title" content="Jeremy Cantú | Full-Stack Software Developer" />
-	<meta property="og:site_name" content="Jeremy Cantú | Full-Stack Software Developer">
+    <!-- Apple touch device props and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#26a69a" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/icons/android-icon-192x192.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/icons/ms-icon-144x144.png"
+    />
+  </head>
 
-	<!-- Apple touch device props and icons -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#26a69a">
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-icon-192x192.png">
-	<meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
-</head>
+  <body ng-cloak>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then(function (registration) {
+            // Registration was successful
+            console.log(
+              "ServiceWorker registration successful with scope: ",
+              registration.scope
+            );
+          })
+          .catch(function (err) {
+            // registration failed :(
+            console.log("ServiceWorker registration failed: ", err);
+          });
+      }
+    </script>
 
-<body ng-cloak>
+    <div class="page {{pageClass}}" ui-view autoscroll="true">
+      <noscript>
+        <h4
+          style="
+            font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light',
+              'Helvetica Neue', Helvetica;
+            text-align: center;
+          "
+        >
+          Sorry, JavaScript needs to be enabled in order to run this website
+          (Alternatively, you can visit my more static site at
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://jac21.github.io/"
+            >http://jac21.github.io/</a
+          >).
+        </h4>
+      </noscript>
+    </div>
 
-	<script>
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('service-worker.js').then(function (registration) {
-				// Registration was successful
-				console.log('ServiceWorker registration successful with scope: ', registration.scope);
-			}).catch(function (err) {
-				// registration failed :(
-				console.log('ServiceWorker registration failed: ', err);
-			});
-		}
-	</script>
+    <!--Import libs -->
+    <script
+      type="text/javascript"
+      src="dist/scripts/lib/lib-bundle.min.js"
+    ></script>
 
-	<div class="page {{pageClass}}" ui-view autoscroll="true">
-		<noscript>
-			<h4
-				style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica; text-align: center;">
-				Sorry, JavaScript needs to be enabled in order to run this website (Alternatively, you can visit my more
-				static site at
-				<a target="_blank" rel="noopener noreferrer"
-					href="http://jac21.github.io/">http://jac21.github.io/</a>).
-			</h4>
-		</noscript>
-	</div>
+    <!-- Import code -->
+    <script type="text/javascript" src="dist/scripts/bundle.min.js"></script>
 
-	<!--Import libs -->
-	<script type="text/javascript" src="dist/scripts/lib/lib-bundle.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-99HXD3NP9S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	<!-- Import code -->
-	<script type="text/javascript" src="dist/scripts/bundle.min.js"></script>
-
-	<!-- Google Analytics -->
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-80565465-2', 'auto');
-		ga('send', 'pageview');
-	</script>
-</body>
-
+      gtag("config", "G-99HXD3NP9S");
+    </script>
+  </body>
 </html>
