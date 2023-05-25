@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/Jac21/Folio#readme",
   "devDependencies": {
-    "browser-sync": "^2.29.1",
+    "browser-sync": "^2.29.3",
     "connect-history-api-fallback": "^1.6.0",
-    "eslint": "^8.40.0",
+    "eslint": "^8.41.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-crass": "^0.2.2",
@@ -35,7 +35,7 @@
     "sw-precache": "^5.2.1"
   },
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.30",
+    "@uirouter/angularjs": "^1.1.0",
     "angular": "^1.8.3",
     "materialize-css": "^1.0.0"
   }
