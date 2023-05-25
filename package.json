@@ -28,7 +28,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-crass": "^0.2.2",
     "gulp-eslint": "^4.0.2",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uncss": "^1.0.6",
