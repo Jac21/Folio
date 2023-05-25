@@ -4,48 +4,49 @@
 
   angular
     .module("folioApp", ["ui.router", "responsive-images"]) // eslint-disable-line no-undef
-    .config(function (
-      $stateProvider,
-      $urlRouterProvider,
-      $compileProvider
-    ) {
+    .config(function ($stateProvider, $urlRouterProvider, $compileProvider) {
       $compileProvider.debugInfoEnabled(false);
 
       $stateProvider
         .state("developer", {
           url: "/developer",
           templateUrl: "templates/main/developer.html",
-          controller: "DeveloperController"
+          controller: "DeveloperController",
         })
         .state("photographer", {
           url: "/photographer",
           templateUrl: "templates/main/photographer.html",
-          controller: "PhotographerController"
+          controller: "PhotographerController",
         })
         .state("vera-photoshoot", {
           url: "/vera-photoshoot",
           templateUrl: "templates/photoshoots/vera-photoshoot.html",
-          controller: "PhotographerController"
+          controller: "PhotographerController",
+        })
+        .state("japan-photoshoot", {
+          url: "/japan-photoshoot",
+          templateUrl: "templates/photoshoots/japan-photoshoot.html",
+          controller: "PhotographerController",
         })
         .state("skillset", {
           url: "/skillset",
           templateUrl: "templates/projects/skillset.html",
-          controller: "DeveloperController"
+          controller: "DeveloperController",
         })
         .state("etude", {
           url: "/etude",
           templateUrl: "templates/projects/etude.html",
-          controller: "DeveloperController"
+          controller: "DeveloperController",
         })
         .state("reponotes", {
           url: "/reponotes",
           templateUrl: "templates/projects/reponotes.html",
-          controller: "DeveloperController"
+          controller: "DeveloperController",
         })
         .state("tfstoolset", {
           url: "/tfstoolset",
           templateUrl: "templates/projects/tfstoolset.html",
-          controller: "DeveloperController"
+          controller: "DeveloperController",
         });
 
       $urlRouterProvider.otherwise("/developer");

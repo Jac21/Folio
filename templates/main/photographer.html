@@ -1,20 +1,33 @@
 <header class="header-photo">
   <div>
-    <a class="photographer-avatar" href="{{photographerHeaderLink.url}}" target="_blank">
-      <img class="headshot-photo" src="{{photographerHeadshot.url}}" alt="{{photographerHeadshot.alt}}" />
+    <a
+      class="photographer-avatar"
+      href="{{photographerHeaderLink.url}}"
+      target="_blank"
+    >
+      <img
+        class="headshot-photo"
+        src="{{photographerHeadshot.url}}"
+        alt="{{photographerHeadshot.alt}}"
+      />
     </a>
     <h1>Jeremy A. Cantú</h1>
-    <a class="ghost-button" href="{{photographerHeaderLink.url}}" target="_blank" rel="noopener noreferrer">Photographer</a>
+    <a
+      class="ghost-button"
+      href="{{photographerHeaderLink.url}}"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Photographer</a
+    >
   </div>
 </header>
 
 <div class="container">
-
   <!-- Switch -->
   <div class="switch checked">
     <label ng-click="go('/developer')">
       Developer
-      <input checked type="checkbox">
+      <input checked type="checkbox" />
       <span class="lever"></span>
       Photographer
     </label>
@@ -22,7 +35,7 @@
 
   <div class="section-photos">
     <h1>Selection of Photos</h1>
-    <hr>
+    <hr />
 
     <div class="row">
       <div class="col s12 m6" ng-repeat="image in images">
@@ -35,19 +48,66 @@
 
   <div class="section-shoots">
     <h1>Photo Shoots</h1>
-    <hr>
+    <hr />
 
     <div class="row">
       <div class="col s12">
         <div class="page-nav-options">
-          <h2 ng-click="go('/vera-photoshoot')" class="caption" tabindex=0 ng-keydown="($event.which === 13) && go('/vera-photoshoot')">Vera</h2>
+          <h2
+            ng-click="go('/vera-photoshoot')"
+            class="caption"
+            tabindex="0"
+            ng-keydown="($event.which === 13) && go('/vera-photoshoot')"
+          >
+            Vera
+          </h2>
         </div>
         <div>
           <div class="image-overlay-container">
-            <i class="zmdi zmdi-collection-plus zmdi-hc-5x pull-right" ng-click="go('/vera-photoshoot')" tabindex=0 ng-keydown="($event.which === 13) && go('/vera-photoshoot')"></i>
+            <i
+              class="zmdi zmdi-collection-plus zmdi-hc-5x pull-right"
+              ng-click="go('/vera-photoshoot')"
+              tabindex="0"
+              ng-keydown="($event.which === 13) && go('/vera-photoshoot')"
+            ></i>
           </div>
-          <img ng-click="go('/vera-photoshoot')" class="responsive-img z-depth-3 shoot-main-img" src="dist/images/photographer/photos/Shoots/Vera/DSC_2016.png"
-            alt="Vera" />
+          <img
+            ng-click="go('/vera-photoshoot')"
+            class="responsive-img z-depth-3 shoot-main-img"
+            src="dist/images/photographer/photos/Shoots/Vera/DSC_2016.png"
+            alt="Vera"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="page-nav-options">
+          <h2
+            ng-click="go('/japan-photoshoot')"
+            class="caption"
+            tabindex="0"
+            ng-keydown="($event.which === 13) && go('/japan-photoshoot')"
+          >
+            Japan
+          </h2>
+        </div>
+        <div>
+          <div class="image-overlay-container">
+            <i
+              class="zmdi zmdi-collection-plus zmdi-hc-5x pull-right"
+              ng-click="go('/japan-photoshoot')"
+              tabindex="0"
+              ng-keydown="($event.which === 13) && go('/japan-photoshoot')"
+            ></i>
+          </div>
+          <img
+            ng-click="go('/japan-photoshoot')"
+            class="responsive-img z-depth-3 shoot-main-img"
+            src="dist/images/photographer/photos/Shoots/Japan/000070750028.jpg"
+            alt="Japan"
+          />
         </div>
       </div>
     </div>
