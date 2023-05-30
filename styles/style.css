@@ -171,6 +171,10 @@ header .ghost-button:hover {
   background: #e4e5e7;
 }
 
+.shoot-container {
+  margin-bottom: 0px;
+}
+
 /*
   Switch styles
 */

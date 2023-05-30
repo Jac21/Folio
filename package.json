@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
+    "serve": "gulp",
     "build": "gulp scripts && gulp crass && npm run precache",
     "build-scripts": "gulp scripts && npm run precache",
     "test": "echo \"Error: no test specified\" && exit 1",
