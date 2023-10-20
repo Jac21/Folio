@@ -28,6 +28,11 @@
           templateUrl: "templates/photoshoots/japan-photoshoot.html",
           controller: "PhotographerController",
         })
+        .state("puerto-rico-photoshoot", {
+          url: "/puerto-rico-photoshoot",
+          templateUrl: "templates/photoshoots/puerto-rico-photoshoot.html",
+          controller: "PhotographerController",
+        })
         .state("skillset", {
           url: "/skillset",
           templateUrl: "templates/projects/skillset.html",
