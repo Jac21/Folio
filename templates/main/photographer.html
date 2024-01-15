@@ -142,5 +142,36 @@
         </div>
       </div>
     </div>
+
+    <div class="row shoot-container">
+      <div class="col s12">
+        <div class="page-nav-options">
+          <h2
+            ng-click="go('/washington-photoshoot')"
+            class="caption"
+            tabindex="0"
+            ng-keydown="($event.which === 13) && go('/washington-photoshoot')"
+          >
+            Washington in Film
+          </h2>
+        </div>
+        <div>
+          <div class="image-overlay-container">
+            <i
+              class="zmdi zmdi-collection-plus zmdi-hc-5x pull-right"
+              ng-click="go('/washington-photoshoot')"
+              tabindex="0"
+              ng-keydown="($event.which === 13) && go('/washington-photoshoot')"
+            ></i>
+          </div>
+          <img
+            ng-click="go('/washington-photoshoot')"
+            class="responsive-img z-depth-3 shoot-main-img"
+            src="dist/images/photographer/photos/Shoots/Washington/3292040250-R1-E020.jpg"
+            alt="Washington in Film"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </div>

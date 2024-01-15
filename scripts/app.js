@@ -33,6 +33,11 @@
           templateUrl: "templates/photoshoots/puerto-rico-photoshoot.html",
           controller: "PhotographerController",
         })
+        .state("washington-photoshoot", {
+          url: "/washington-photoshoot",
+          templateUrl: "templates/photoshoots/washington-photoshoot.html",
+          controller: "PhotographerController",
+        })
         .state("skillset", {
           url: "/skillset",
           templateUrl: "templates/projects/skillset.html",
