@@ -175,6 +175,10 @@ header .ghost-button:hover {
   margin-bottom: 0px;
 }
 
+.thematic-break-shoot {
+  margin-bottom: 0 !important;
+}
+
 /*
   Switch styles
 */
