@@ -13,6 +13,21 @@
           templateUrl: "templates/main/developer.html",
           controller: "DeveloperController",
         })
+        .state("about", {
+          url: "/about",
+          templateUrl: "templates/main/about.html",
+          controller: "DeveloperController",
+        })
+        .state("ideas", {
+          url: "/ideas",
+          templateUrl: "templates/main/ideas.html",
+          controller: "DeveloperController",
+        })
+        .state("now", {
+          url: "/now",
+          templateUrl: "templates/main/now.html",
+          controller: "DeveloperController",
+        })
         .state("photographer", {
           url: "/photographer",
           templateUrl: "templates/main/photographer.html",
