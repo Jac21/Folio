@@ -4,8 +4,17 @@
 
   angular
     .module("folioApp", ["ui.router", "responsive-images"]) // eslint-disable-line no-undef
-    .config(function ($stateProvider, $urlRouterProvider, $compileProvider) {
+    .config(function (
+      $stateProvider,
+      $urlRouterProvider,
+      $compileProvider,
+      $locationProvider
+    ) {
       $compileProvider.debugInfoEnabled(false);
+
+      $locationProvider.html5Mode({
+        enabled: true,
+      });
 
       $stateProvider
         .state("developer", {
