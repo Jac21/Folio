@@ -36,7 +36,7 @@
     "sw-precache": "^5.2.1"
   },
   "dependencies": {
-    "@uirouter/angularjs": "^1.1.1",
+    "@uirouter/angularjs": "^1.1.0",
     "angular": "^1.8.3",
     "materialize-css": "^1.0.0"
   }
