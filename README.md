@@ -1,7 +1,7 @@
 # Folio
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![CircleCI](https://circleci.com/gh/Jac21/Folio/tree/master.svg?style=shield)](https://circleci.com/gh/Jac21/Folio/tree/master) 
+![build workflow](https://github.com/Jac21/Folio/actions/workflows/build.yml/badge.svg)
 [![donate](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/jac21)
 
 Live site: 
