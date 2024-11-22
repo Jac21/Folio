@@ -3,7 +3,7 @@
 var gulp = require("gulp"); // gulping!
 var browserSync = require("browser-sync"); // sync browser with code changes!
 var lint = require("gulp-eslint"); // lint JS files!
-const imagemin = import("gulp-imagemin"); // optimizing images!
+const imagemin = require("gulp-imagemin"); // optimizing images!
 var rename = require("gulp-rename"); // renaming JS!
 var uncss = require("gulp-uncss"); // shedding CSS!
 var crass = require("gulp-crass"); // optimizing CSS!

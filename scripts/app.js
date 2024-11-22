@@ -67,6 +67,16 @@
           templateUrl: "templates/photoshoots/puerto-rico-2024-photoshoot.html",
           controller: "PhotographerController",
         })
+        .state("summer-2024-photoshoot", {
+          url: "/summer-2024-photoshoot",
+          templateUrl: "templates/photoshoots/summer-2024-photoshoot.html",
+          controller: "PhotographerController",
+        })
+        .state("taiwan-2024-photoshoot", {
+          url: "/taiwan-2024-photoshoot",
+          templateUrl: "templates/photoshoots/taiwan-2024-photoshoot.html",
+          controller: "PhotographerController",
+        })
         .state("skillset", {
           url: "/skillset",
           templateUrl: "templates/projects/skillset.html",
