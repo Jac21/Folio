@@ -3,7 +3,6 @@
 var gulp = require("gulp"); // gulping!
 var browserSync = require("browser-sync"); // sync browser with code changes!
 var lint = require("gulp-eslint"); // lint JS files!
-const imagemin = require("gulp-imagemin"); // optimizing images!
 var rename = require("gulp-rename"); // renaming JS!
 var uncss = require("gulp-uncss"); // shedding CSS!
 var crass = require("gulp-crass"); // optimizing CSS!
@@ -54,18 +53,6 @@ gulp.task("browser-sync", function () {
       middleware: [historyApiFallback()],
     },
   });
-});
-
-// image task
-gulp.task("images", function () {
-  return gulp
-    .src(config.paths.images)
-    .pipe(
-      imagemin({
-        progressive: true,
-      })
-    )
-    .pipe(gulp.dest(destConfig.paths.images));
 });
 
 // Library scripts task
@@ -135,7 +122,6 @@ gulp.task("watch", function () {
   gulp.watch(config.paths.applicationJavascript, gulp.series("lint"));
   gulp.watch(config.paths.applicationJavascript, gulp.series("scripts"));
   gulp.watch(config.paths.libJavascript, gulp.series("lib-scripts"));
-  gulp.watch(config.paths.images, gulp.series("images"));
   gulp.watch(config.paths.styles, gulp.series("crass"));
 });
 
