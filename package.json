@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Portfolio site",
   "main": "gulpfile.js",
+  "type": "module",
   "scripts": {
     "start": "gulp",
     "serve": "gulp",
     "build": "gulp scripts && gulp crass && npm run precache",
     "build-scripts": "gulp scripts && npm run precache",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precache": "sw-precache --verbose --config=sw-precache-config.js"
+    "precache": "sw-precache --verbose --config=sw-precache-config.cjs"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-crass": "^0.2.2",
     "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^9.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uncss": "^1.0.6",

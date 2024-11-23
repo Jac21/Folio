@@ -1,13 +1,14 @@
 "use strict";
 
-var gulp = require("gulp"); // gulping!
-var browserSync = require("browser-sync"); // sync browser with code changes!
-var lint = require("gulp-eslint"); // lint JS files!
-var rename = require("gulp-rename"); // renaming JS!
-var uncss = require("gulp-uncss"); // shedding CSS!
-var crass = require("gulp-crass"); // optimizing CSS!
-var concat = require("gulp-concat"); // concat helper!
-var historyApiFallback = require("connect-history-api-fallback"); // local development helper!
+import gulp from "gulp"; // gulping!
+import browserSync from "browser-sync"; // sync browser with code changes!
+import lint from "gulp-eslint"; // lint JS files!
+import imagemin, { mozjpeg, optipng } from "gulp-imagemin"; // optimizing images!
+import rename from "gulp-rename"; // renaming JS!
+import uncss from "gulp-uncss"; // shedding CSS!
+import crass from "gulp-crass"; // optimizing CSS!
+import concat from "gulp-concat"; // concat helper!
+import historyApiFallback from "connect-history-api-fallback"; // local development helper!
 
 // configuration object
 var config = {
@@ -68,6 +69,22 @@ gulp.task("lib-scripts", function () {
     .pipe(gulp.dest(destConfig.paths.libJavascript));
 });
 
+// image task
+gulp.task("images", function () {
+  return gulp
+    .src(config.paths.images, { encoding: false })
+    .pipe(
+      imagemin([
+        mozjpeg({
+          quality: 75,
+          progressive: true,
+        }),
+        optipng({ optimizationLevel: 5 }),
+      ])
+    )
+    .pipe(gulp.dest(destConfig.paths.images));
+});
+
 // Scripts task
 gulp.task("scripts", gulp.series("lib-scripts"), function () {
   return gulp
@@ -122,6 +139,7 @@ gulp.task("watch", function () {
   gulp.watch(config.paths.applicationJavascript, gulp.series("lint"));
   gulp.watch(config.paths.applicationJavascript, gulp.series("scripts"));
   gulp.watch(config.paths.libJavascript, gulp.series("lib-scripts"));
+  gulp.watch(config.paths.images, gulp.series("images"));
   gulp.watch(config.paths.styles, gulp.series("crass"));
 });
 
