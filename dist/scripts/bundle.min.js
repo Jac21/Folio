@@ -72,9 +72,10 @@
           templateUrl: "templates/photoshoots/summer-2024-photoshoot.html",
           controller: "PhotographerController",
         })
-        .state("taiwan-2024-photoshoot", {
-          url: "/taiwan-2024-photoshoot",
-          templateUrl: "templates/photoshoots/taiwan-2024-photoshoot.html",
+        .state("japan-taiwan-2024-photoshoot", {
+          url: "/japan-taiwan-2024-photoshoot",
+          templateUrl:
+            "templates/photoshoots/japan-taiwan-2024-photoshoot.html",
           controller: "PhotographerController",
         })
         .state("skillset", {
