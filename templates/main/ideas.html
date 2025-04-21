@@ -1,15 +1,5 @@
 <div class="container blog-container">
   <h1>Ideas</h1>
-  <div class="page-nav-options">
-    <div
-      ng-click="go('/developer')"
-      class="header-back-link"
-      tabindex="0"
-      ng-keydown="($event.which === 13) && go('/developer')"
-    >
-      Back
-    </div>
-  </div>
 
   <iframe
     style="border-radius: 12px"
@@ -23,6 +13,13 @@
   ></iframe>
 
   <div class="page-nav-options">
-    <div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
+    <div
+      ng-click="go('/developer')"
+      class="header-back-link"
+      tabindex="0"
+      ng-keydown="($event.which === 13) && go('/developer')"
+    >
+      Back to Home
+    </div>
   </div>
 </div>
