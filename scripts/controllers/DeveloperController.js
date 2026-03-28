@@ -7,13 +7,24 @@
       "$scope",
       "$location",
       "$anchorScroll",
-      function ($scope, $location, $anchorScroll) {
+      "$timeout",
+      function ($scope, $location, $anchorScroll, $timeout) {
+        function resetScrollPosition() {
+          window.scrollTo(0, 0);
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
         // set page class
         $scope.pageClass = "developer";
 
         // utility function for linking between views
         $scope.go = function (path) {
+          resetScrollPosition();
+          $location.hash("");
           $location.path(path);
+          $timeout(resetScrollPosition, 0, false);
+          $timeout(resetScrollPosition, 75, false);
         };
 
         // page specific objects
@@ -43,6 +54,8 @@
         $scope.backToTop = function () {
           $anchorScroll();
         };
+
+        resetScrollPosition();
 
         // initialize FAB
         var elem = document.querySelector(".fixed-action-btn");

@@ -105,5 +105,35 @@
         });
 
       $urlRouterProvider.otherwise("/developer");
-    });
+    })
+    .run([
+      "$transitions",
+      "$rootScope",
+      "$timeout",
+      function ($transitions, $rootScope, $timeout) {
+        function resetScrollPosition() {
+          window.scrollTo(0, 0);
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+        function scheduleScrollReset() {
+          resetScrollPosition();
+
+          $timeout(resetScrollPosition, 0, false);
+          $timeout(resetScrollPosition, 50, false);
+          $timeout(resetScrollPosition, 150, false);
+        }
+
+        if ("scrollRestoration" in window.history) {
+          window.history.scrollRestoration = "manual";
+        }
+
+        $transitions.onSuccess({}, function () {
+          scheduleScrollReset();
+        });
+
+        $rootScope.$on("$viewContentLoaded", scheduleScrollReset);
+      },
+    ]);
 })();

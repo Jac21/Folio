@@ -7,7 +7,14 @@
       "$scope",
       "$location",
       "$anchorScroll",
-      function ($scope, $location, $anchorScroll) {
+      "$timeout",
+      function ($scope, $location, $anchorScroll, $timeout) {
+        function resetScrollPosition() {
+          window.scrollTo(0, 0);
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
         // set page class
         $scope.pageClass = "photographer";
 
@@ -58,13 +65,19 @@
 
         // utility function for linking between views
         $scope.go = function (path) {
+          resetScrollPosition();
+          $location.hash("");
           $location.path(path);
+          $timeout(resetScrollPosition, 0, false);
+          $timeout(resetScrollPosition, 75, false);
         };
 
         // utility function to set viewport to the top of the page on element click
         $scope.backToTop = function () {
           $anchorScroll();
         };
+
+        resetScrollPosition();
       },
     ]);
 })();
