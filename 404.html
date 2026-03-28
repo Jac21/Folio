@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="folioApp">
+  <head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta
+      name="Description"
+      content="Jeremy Cantú | Full-Stack Software Developer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeremy Cantú | Full-Stack Software Developer</title>
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="dist/stylesUncss/material-design-iconic-font.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="dist/styles/materialize.min.css"
+      media="screen"
+    />
+    <link type="text/css" rel="stylesheet" href="dist/styles/style.css" />
+
+    <link rel="canonical" href="https://www.jeremycantu.com" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#26a69a" />
+    <meta name="application-name" content="Folio" />
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+  </head>
+
+  <body ng-cloak>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .catch(function (err) {
+            console.log("ServiceWorker registration failed: ", err);
+          });
+      }
+    </script>
+
+    <div class="page {{pageClass}}" ui-view autoscroll="true">
+      <noscript>
+        <h4
+          style="
+            font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light',
+              'Helvetica Neue', Helvetica;
+            text-align: center;
+          "
+        >
+          Sorry, JavaScript needs to be enabled in order to run this website.
+        </h4>
+      </noscript>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="dist/scripts/lib/lib-bundle.min.js"
+    ></script>
+    <script type="text/javascript" src="dist/scripts/bundle.min.js"></script>
+  </body>
+</html>

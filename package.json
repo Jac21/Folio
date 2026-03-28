@@ -7,8 +7,8 @@
   "scripts": {
     "start": "gulp",
     "serve": "gulp",
-    "build": "gulp scripts && gulp crass && npm run precache",
-    "build-scripts": "gulp scripts && npm run precache",
+    "build": "gulp build && npm run precache",
+    "build-scripts": "gulp build-scripts && npm run precache",
     "test": "echo \"Error: no test specified\" && exit 1",
     "precache": "sw-precache --verbose --config=sw-precache-config.cjs"
   },

@@ -44,7 +44,7 @@ var destConfig = {
 };
 
 // browser-sync task
-gulp.task("browser-sync", function () {
+function browserSyncTask() {
   browserSync.init({
     files: [config.paths.files],
     browser: config.browser,
@@ -54,10 +54,10 @@ gulp.task("browser-sync", function () {
       middleware: [historyApiFallback()],
     },
   });
-});
+}
 
 // Library scripts task
-gulp.task("lib-scripts", function () {
+function libScriptsTask() {
   return gulp
     .src(config.paths.libJavascript)
     .pipe(concat("lib-bundle.js"))
@@ -67,10 +67,10 @@ gulp.task("lib-scripts", function () {
       })
     )
     .pipe(gulp.dest(destConfig.paths.libJavascript));
-});
+}
 
 // image task
-gulp.task("images", function () {
+function imagesTask() {
   return gulp
     .src(config.paths.images, { encoding: false })
     .pipe(
@@ -83,10 +83,9 @@ gulp.task("images", function () {
       ])
     )
     .pipe(gulp.dest(destConfig.paths.images));
-});
+}
 
-// Scripts task
-gulp.task("scripts", gulp.series("lib-scripts"), function () {
+function appScriptsTask() {
   return gulp
     .src(config.paths.applicationJavascript)
     .pipe(concat("bundle.js"))
@@ -96,10 +95,12 @@ gulp.task("scripts", gulp.series("lib-scripts"), function () {
       })
     )
     .pipe(gulp.dest(destConfig.paths.javascript));
-});
+}
+
+var scriptsTask = gulp.series(libScriptsTask, appScriptsTask);
 
 // linting task
-gulp.task("lint", function () {
+function lintTask() {
   return gulp
     .src(config.paths.applicationJavascript)
     .pipe(
@@ -108,10 +109,10 @@ gulp.task("lint", function () {
       })
     )
     .pipe(lint.format());
-});
+}
 
 //uncss-ing task
-gulp.task("uncss", function () {
+function uncssTask() {
   return gulp
     .src(config.paths.styles)
     .pipe(
@@ -120,10 +121,10 @@ gulp.task("uncss", function () {
       })
     )
     .pipe(gulp.dest(destConfig.paths.stylesUncss));
-});
+}
 
 // crass, used for CSS minification
-gulp.task("crass", function () {
+function crassTask() {
   return gulp
     .src(config.paths.styles)
     .pipe(
@@ -132,18 +133,30 @@ gulp.task("crass", function () {
       })
     )
     .pipe(gulp.dest(destConfig.paths.styles));
-});
+}
 
 // watch task for any html/js changes
-gulp.task("watch", function () {
-  gulp.watch(config.paths.applicationJavascript, gulp.series("lint"));
-  gulp.watch(config.paths.applicationJavascript, gulp.series("scripts"));
-  gulp.watch(config.paths.libJavascript, gulp.series("lib-scripts"));
-  gulp.watch(config.paths.images, gulp.series("images"));
-  gulp.watch(config.paths.styles, gulp.series("crass"));
-});
+function watchTask() {
+  gulp.watch(config.paths.applicationJavascript, gulp.series(lintTask, scriptsTask));
+  gulp.watch(config.paths.libJavascript, libScriptsTask);
+  gulp.watch(config.paths.images, imagesTask);
+  gulp.watch(config.paths.styles, crassTask);
+}
+
+var buildScriptsTask = scriptsTask;
+var buildTask = gulp.series(scriptsTask, crassTask);
 
 // default gulp tasks
-var defaultTasks = gulp.parallel("browser-sync", "watch");
+var defaultTasks = gulp.parallel(browserSyncTask, watchTask);
 
-gulp.task("default", defaultTasks, function () {});
+gulp.task("browser-sync", browserSyncTask);
+gulp.task("lib-scripts", libScriptsTask);
+gulp.task("images", imagesTask);
+gulp.task("scripts", scriptsTask);
+gulp.task("lint", lintTask);
+gulp.task("uncss", uncssTask);
+gulp.task("crass", crassTask);
+gulp.task("watch", watchTask);
+gulp.task("build-scripts", buildScriptsTask);
+gulp.task("build", buildTask);
+gulp.task("default", defaultTasks);

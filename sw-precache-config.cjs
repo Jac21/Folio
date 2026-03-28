@@ -6,8 +6,16 @@ module.exports = {
     "dist/styles/style.css",
     "dist/styles/materialize.min.css",
     "dist/stylesUncss/material-design-iconic-font.css",
-    "dist/images/**",
     "dist/scripts/**"
   ],
-  navigateFallback: "/index.html"
+  staticFileGlobsIgnorePatterns: [
+    /dist\/images\//,
+  ],
+  navigateFallback: "/index.html",
+  runtimeCaching: [
+    {
+      urlPattern: /\/dist\/images\//,
+      handler: "cacheFirst"
+    }
+  ]
 };
