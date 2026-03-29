@@ -687,17 +687,31 @@ header .ghost-button:hover {
   margin-bottom: 0;
 }
 
+.section-projects .row,
+.section-photos .row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem;
+}
+
 .section-projects .card {
   background: var(--surface);
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-md);
   box-shadow: 0 14px 30px rgba(21, 35, 32, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   overflow: hidden;
 }
 
 .section-projects .card.medium {
   height: auto;
   min-height: 0;
+}
+
+.section-projects .card .card-image {
+  flex-shrink: 0;
 }
 
 .section-projects .card .card-image img {
@@ -707,6 +721,7 @@ header .ghost-button:hover {
 }
 
 .section-projects .card .card-content {
+  flex: 1 1 auto;
   padding-bottom: 1rem;
 }
 
@@ -722,6 +737,7 @@ header .ghost-button:hover {
 .section-projects .card .card-action {
   background: var(--surface-soft);
   border-top-color: rgba(38, 166, 154, 0.12);
+  margin-top: auto;
   padding-top: 0.85rem;
   padding-bottom: 0.85rem;
 }
@@ -735,22 +751,21 @@ header .ghost-button:hover {
 }
 
 @media all and (min-width: 64em) {
+  .section-projects .row,
+  .section-photos .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .section-projects .col.s12.m6 {
+    float: none;
     width: 50%;
   }
 
   .section-photos .col.s12.m6 {
-    width: 33.33333333%;
-  }
-}
-
-@media all and (min-width: 88em) {
-  .section-projects .col.s12.m6 {
-    width: 25%;
-  }
-
-  .section-photos .col.s12.m6 {
-    width: 25%;
+    float: none;
+    width: 50%;
   }
 }
 
@@ -770,11 +785,28 @@ header .ghost-button:hover {
   }
 
   .responsive-img-text .responsive-img,
-  .talk-div .responsive-img,
-  .section-photos .responsive-img {
+  .talk-div .responsive-img {
     max-height: 380px;
     width: auto;
     max-width: 100%;
+  }
+}
+
+.section-photos .responsive-img {
+  display: block;
+  height: auto;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+@media all and (min-width: 64em) {
+  .section-photos .responsive-img {
+    aspect-ratio: 16 / 10;
+    height: 100%;
+    margin-bottom: 1.5rem;
+    max-height: none;
+    object-fit: cover;
+    width: 100%;
   }
 }
 
